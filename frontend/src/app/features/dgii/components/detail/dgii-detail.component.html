@@ -1,0 +1,75 @@
+<p-dialog *ngIf="companyCredential !== undefined"
+    header="Detalles de la compañia"
+    [(visible)]="visible"
+    [modal]="true"
+    (onHide)="visible = false"
+    [closable]="false"
+    [style]="{ width: '50rem' }"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+    <div class="card p-fluid">
+        <h5>Detalle compañia</h5>
+        <div class="p-formgrid grid">
+            <div class="field col">
+                <label htmlFor="Rnc">Rnc</label>
+                <input pInputText type="text" id="Rnc" maxlength="11" [(ngModel)]="companyCredential.rnc" readonly/>
+            </div>
+            <div class="field col">
+                <label htmlFor="company">Compañia</label>
+                <input pInputText id="company" type="text" maxlength="128" [(ngModel)]="companyCredential.companyName" readonly/>
+            </div>
+        </div>
+        <div class="p-formgrid grid">
+            <div class="field col">
+                <label htmlFor="pwd">Password</label>
+                <input pInputText id="pwd" type="text" maxlength="128" [(ngModel)]="companyCredential.pwd" readonly/>
+            </div>
+            <div class="field col">
+                <div class="flex row pt-5">
+                    <div class="flex align-items-center">
+                        <span>Token requerido</span>
+                        <p-inputSwitch [(ngModel)]="companyCredential.tokenRequired" class="px-2" [disabled]="true"/>
+                    </div>
+                    <div class="flex align-items-center px-2">
+                        <span>Procesar</span>
+                        <p-inputSwitch [(ngModel)]="companyCredential.selectedForProcessing" class="px-2" [disabled]="true"/>
+                    </div>
+                    <div class="flex align-items-center px-2">
+                        <span>Estatus</span>
+                        <p-inputSwitch [(ngModel)]="companyCredential.statusInd" class="px-2" [disabled]="true"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-formgrid grid">
+            <div class="field col-6">
+                <label htmlFor="manager">Asesor</label>
+                <input pInputText id="pwd" type="text" maxlength="128" [(ngModel)]="selectedManager.managerName" readonly/>
+            </div>
+        </div>
+        <div class="p-formgrid grid pt-3 pb-2" >
+            <p-fieldset legend="Tokens" class="field col-12 pt-5">
+                <p-table [value]="companyCredential.companyCredentialTokens"  [tableStyle]="{'min-width': '30rem'}" styleClass="p-datatable-gridlines" >
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>No.</th>
+                            <th>Valor</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-token let-editing="editing" let-ri="rowIndex">
+                        <tr>
+                            <td> {{token.tokenId}} </td>
+                            <td>{{token.tokenValue}} </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-fieldset>
+        </div>
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button
+            label="Cerrar"
+            [text]="true"
+            severity="secondary"
+            (onClick)="closeDialog()" />
+    </ng-template>
+</p-dialog>

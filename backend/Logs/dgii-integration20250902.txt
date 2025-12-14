@@ -1,0 +1,235 @@
+2025-09-02 02:28:10.884 -04:00 [INF] ========================================================================================
+2025-09-02 02:28:10.928 -04:00 [INF] Inicia el proceso para Rnc: 131254268
+2025-09-02 02:28:10.930 -04:00 [INF] inicializar el browser
+2025-09-02 02:28:17.045 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-02 02:28:17.251 -04:00 [INF] Hace login
+2025-09-02 02:28:22.468 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-02 02:28:37.562 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-02 02:28:37.566 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-02 02:28:38.966 -04:00 [INF] El nombre de la compania es DEVELOPMENT 088 SRL
+2025-09-02 02:28:38.967 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-02 02:28:40.518 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl06_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-02 02:28:55.071 -04:00 [INF] Delcaracion 606, periodo 201501
+2025-09-02 02:29:01.093 -04:00 [INF] Delcaracion 607, periodo 201501
+2025-09-02 02:29:04.999 -04:00 [INF] Delcaracion IT1, periodo 201501
+2025-09-02 02:29:31.118 -04:00 [INF] Delcaracion 606, periodo 201502
+2025-09-02 02:29:36.828 -04:00 [INF] Delcaracion 607, periodo 201502
+2025-09-02 02:29:39.844 -04:00 [INF] Delcaracion IT1, periodo 201502
+2025-09-02 02:29:59.872 -04:00 [INF] Delcaracion 606, periodo 201503
+2025-09-02 02:30:05.452 -04:00 [INF] Delcaracion 607, periodo 201503
+2025-09-02 02:30:08.510 -04:00 [INF] Delcaracion IT1, periodo 201503
+2025-09-02 02:30:29.298 -04:00 [INF] Delcaracion 606, periodo 201504
+2025-09-02 02:30:34.985 -04:00 [INF] Delcaracion 607, periodo 201504
+2025-09-02 02:30:38.356 -04:00 [INF] Delcaracion IT1, periodo 201504
+2025-09-02 02:30:58.751 -04:00 [INF] Delcaracion 606, periodo 201505
+2025-09-02 02:31:04.222 -04:00 [INF] Delcaracion 607, periodo 201505
+2025-09-02 02:31:07.467 -04:00 [INF] Delcaracion IT1, periodo 201505
+2025-09-02 02:31:27.610 -04:00 [INF] Delcaracion 606, periodo 201506
+2025-09-02 02:31:33.201 -04:00 [INF] Delcaracion 607, periodo 201506
+2025-09-02 02:31:36.202 -04:00 [INF] Delcaracion IT1, periodo 201506
+2025-09-02 02:31:56.639 -04:00 [INF] Delcaracion 606, periodo 201507
+2025-09-02 02:32:18.696 -04:00 [INF] Delcaracion 607, periodo 201507
+2025-09-02 02:32:21.983 -04:00 [INF] Delcaracion IT1, periodo 201507
+2025-09-02 02:32:42.091 -04:00 [INF] Delcaracion 606, periodo 201508
+2025-09-02 02:32:47.719 -04:00 [INF] Delcaracion 607, periodo 201508
+2025-09-02 02:32:50.760 -04:00 [INF] Delcaracion IT1, periodo 201508
+2025-09-02 02:33:12.652 -04:00 [INF] Delcaracion 606, periodo 201509
+2025-09-02 02:33:18.343 -04:00 [INF] Delcaracion 607, periodo 201509
+2025-09-02 02:33:21.491 -04:00 [INF] Delcaracion IT1, periodo 201509
+2025-09-02 02:33:42.302 -04:00 [INF] Delcaracion 606, periodo 201510
+2025-09-02 02:33:47.803 -04:00 [INF] Delcaracion 607, periodo 201510
+2025-09-02 02:33:50.963 -04:00 [INF] Delcaracion IT1, periodo 201510
+2025-09-02 02:34:10.938 -04:00 [INF] Delcaracion 606, periodo 201511
+2025-09-02 02:34:16.573 -04:00 [INF] Delcaracion 607, periodo 201511
+2025-09-02 02:34:19.642 -04:00 [INF] Delcaracion IT1, periodo 201511
+2025-09-02 02:34:39.760 -04:00 [INF] Delcaracion 606, periodo 201512
+2025-09-02 02:34:45.326 -04:00 [INF] Delcaracion 607, periodo 201512
+2025-09-02 02:34:48.412 -04:00 [INF] Delcaracion IT1, periodo 201512
+2025-09-02 02:35:08.350 -04:00 [INF] Delcaracion 606, periodo 201601
+2025-09-02 02:35:33.444 -04:00 [INF] Delcaracion 607, periodo 201601
+2025-09-02 02:35:36.938 -04:00 [INF] Delcaracion IT1, periodo 201601
+2025-09-02 02:35:57.113 -04:00 [INF] Delcaracion 606, periodo 201602
+2025-09-02 02:36:02.759 -04:00 [INF] Delcaracion 607, periodo 201602
+2025-09-02 02:36:05.651 -04:00 [INF] Delcaracion IT1, periodo 201602
+2025-09-02 02:36:25.599 -04:00 [INF] Delcaracion 606, periodo 201603
+2025-09-02 02:36:31.445 -04:00 [INF] Delcaracion 607, periodo 201603
+2025-09-02 02:36:34.562 -04:00 [INF] Delcaracion IT1, periodo 201603
+2025-09-02 02:36:54.464 -04:00 [INF] Delcaracion 606, periodo 201604
+2025-09-02 02:36:59.911 -04:00 [INF] Delcaracion 607, periodo 201604
+2025-09-02 02:37:03.013 -04:00 [INF] Delcaracion IT1, periodo 201604
+2025-09-02 02:37:23.937 -04:00 [INF] Delcaracion 606, periodo 201605
+2025-09-02 02:37:29.954 -04:00 [INF] Delcaracion 607, periodo 201605
+2025-09-02 02:37:33.144 -04:00 [INF] Delcaracion IT1, periodo 201605
+2025-09-02 02:38:10.850 -04:00 [INF] Delcaracion 606, periodo 201606
+2025-09-02 02:38:49.441 -04:00 [INF] Delcaracion 607, periodo 201606
+2025-09-02 02:38:52.554 -04:00 [INF] Delcaracion IT1, periodo 201606
+2025-09-02 02:39:12.599 -04:00 [INF] Delcaracion 606, periodo 201607
+2025-09-02 02:39:18.043 -04:00 [INF] Delcaracion 607, periodo 201607
+2025-09-02 02:39:21.194 -04:00 [INF] Delcaracion IT1, periodo 201607
+2025-09-02 02:39:41.060 -04:00 [INF] Delcaracion 606, periodo 201608
+2025-09-02 02:39:46.789 -04:00 [INF] Delcaracion 607, periodo 201608
+2025-09-02 02:39:49.684 -04:00 [INF] Delcaracion IT1, periodo 201608
+2025-09-02 02:40:10.823 -04:00 [INF] Delcaracion 606, periodo 201609
+2025-09-02 02:40:16.309 -04:00 [INF] Delcaracion 607, periodo 201609
+2025-09-02 02:40:19.494 -04:00 [INF] Delcaracion IT1, periodo 201609
+2025-09-02 02:40:40.221 -04:00 [INF] Delcaracion 606, periodo 201610
+2025-09-02 02:40:45.675 -04:00 [INF] Delcaracion 607, periodo 201610
+2025-09-02 02:40:48.687 -04:00 [INF] Delcaracion IT1, periodo 201610
+2025-09-02 02:41:08.405 -04:00 [INF] Delcaracion 606, periodo 201611
+2025-09-02 02:41:14.038 -04:00 [INF] Delcaracion 607, periodo 201611
+2025-09-02 02:41:17.144 -04:00 [INF] Delcaracion IT1, periodo 201611
+2025-09-02 02:41:37.339 -04:00 [INF] Delcaracion 606, periodo 201612
+2025-09-02 02:41:43.035 -04:00 [INF] Delcaracion 607, periodo 201612
+2025-09-02 02:41:46.098 -04:00 [INF] Delcaracion IT1, periodo 201612
+2025-09-02 02:42:05.928 -04:00 [INF] Delcaracion 606, periodo 201701
+2025-09-02 02:42:11.584 -04:00 [INF] Delcaracion 607, periodo 201701
+2025-09-02 02:42:14.761 -04:00 [INF] Delcaracion IT1, periodo 201701
+2025-09-02 02:42:35.057 -04:00 [INF] Delcaracion 606, periodo 201702
+2025-09-02 02:42:40.799 -04:00 [INF] Delcaracion 607, periodo 201702
+2025-09-02 02:42:43.666 -04:00 [INF] Delcaracion IT1, periodo 201702
+2025-09-02 02:43:03.459 -04:00 [INF] Delcaracion 606, periodo 201703
+2025-09-02 02:43:09.053 -04:00 [INF] Delcaracion 607, periodo 201703
+2025-09-02 02:43:11.879 -04:00 [INF] Delcaracion IT1, periodo 201703
+2025-09-02 02:43:32.420 -04:00 [INF] Delcaracion 606, periodo 201704
+2025-09-02 02:43:38.774 -04:00 [INF] Delcaracion 607, periodo 201704
+2025-09-02 02:43:41.716 -04:00 [INF] Delcaracion IT1, periodo 201704
+2025-09-02 02:44:01.696 -04:00 [INF] Delcaracion 606, periodo 201705
+2025-09-02 02:44:07.357 -04:00 [INF] Delcaracion 607, periodo 201705
+2025-09-02 02:44:10.378 -04:00 [INF] Delcaracion IT1, periodo 201705
+2025-09-02 02:44:30.302 -04:00 [INF] Delcaracion 606, periodo 201706
+2025-09-02 02:44:35.839 -04:00 [INF] Delcaracion 607, periodo 201706
+2025-09-02 02:44:38.876 -04:00 [INF] Delcaracion IT1, periodo 201706
+2025-09-02 02:45:05.642 -04:00 [INF] Delcaracion 606, periodo 201707
+2025-09-02 02:45:16.247 -04:00 [INF] Delcaracion 607, periodo 201707
+2025-09-02 02:45:19.144 -04:00 [INF] Delcaracion IT1, periodo 201707
+2025-09-02 02:45:40.347 -04:00 [INF] Delcaracion 606, periodo 201708
+2025-09-02 02:45:45.773 -04:00 [INF] Delcaracion 607, periodo 201708
+2025-09-02 02:45:48.841 -04:00 [INF] Delcaracion IT1, periodo 201708
+2025-09-02 02:46:09.037 -04:00 [INF] Delcaracion 606, periodo 201709
+2025-09-02 02:46:14.627 -04:00 [INF] Delcaracion 607, periodo 201709
+2025-09-02 02:46:17.488 -04:00 [INF] Delcaracion IT1, periodo 201709
+2025-09-02 02:46:37.966 -04:00 [INF] Delcaracion 606, periodo 201710
+2025-09-02 02:46:43.625 -04:00 [INF] Delcaracion 607, periodo 201710
+2025-09-02 02:46:46.679 -04:00 [INF] Delcaracion IT1, periodo 201710
+2025-09-02 02:47:07.742 -04:00 [INF] Delcaracion 606, periodo 201711
+2025-09-02 02:47:13.324 -04:00 [INF] Delcaracion 607, periodo 201711
+2025-09-02 02:47:16.420 -04:00 [INF] Delcaracion IT1, periodo 201711
+2025-09-02 02:47:36.767 -04:00 [INF] Delcaracion 606, periodo 201712
+2025-09-02 02:47:42.473 -04:00 [INF] Delcaracion 607, periodo 201712
+2025-09-02 02:47:45.564 -04:00 [INF] Delcaracion IT1, periodo 201712
+2025-09-02 02:48:05.130 -04:00 [INF] Delcaracion 606, periodo 201801
+2025-09-02 02:48:10.781 -04:00 [INF] Delcaracion 607, periodo 201801
+2025-09-02 02:48:13.800 -04:00 [INF] Delcaracion Anexo IT1, periodo 201801
+2025-09-02 02:48:31.675 -04:00 [INF] Delcaracion IT1, periodo 201801
+2025-09-02 02:48:52.599 -04:00 [INF] Delcaracion 606, periodo 201802
+2025-09-02 02:48:58.286 -04:00 [INF] Delcaracion 607, periodo 201802
+2025-09-02 02:49:01.383 -04:00 [INF] Delcaracion Anexo IT1, periodo 201802
+2025-09-02 02:49:19.536 -04:00 [INF] Delcaracion IT1, periodo 201802
+2025-09-02 02:49:40.287 -04:00 [INF] Delcaracion 606, periodo 201803
+2025-09-02 02:49:45.976 -04:00 [INF] Delcaracion 607, periodo 201803
+2025-09-02 02:49:49.034 -04:00 [INF] Delcaracion Anexo IT1, periodo 201803
+2025-09-02 02:50:07.083 -04:00 [INF] Delcaracion IT1, periodo 201803
+2025-09-02 02:50:27.429 -04:00 [INF] Delcaracion 606, periodo 201804
+2025-09-02 02:50:33.251 -04:00 [INF] Delcaracion 607, periodo 201804
+2025-09-02 02:50:36.340 -04:00 [INF] Delcaracion Anexo IT1, periodo 201804
+2025-09-02 02:50:54.550 -04:00 [INF] Delcaracion IT1, periodo 201804
+2025-09-02 02:51:16.013 -04:00 [INF] Delcaracion 606, periodo 201805
+2025-09-02 02:51:21.554 -04:00 [INF] Delcaracion 607, periodo 201805
+2025-09-02 02:51:24.317 -04:00 [INF] Delcaracion Anexo IT1, periodo 201805
+2025-09-02 02:51:42.980 -04:00 [INF] Delcaracion IT1, periodo 201805
+2025-09-02 02:52:03.621 -04:00 [INF] Delcaracion 606, periodo 201806
+2025-09-02 02:52:09.046 -04:00 [INF] Delcaracion 607, periodo 201806
+2025-09-02 02:52:12.110 -04:00 [INF] Delcaracion Anexo IT1, periodo 201806
+2025-09-02 02:52:30.277 -04:00 [INF] Delcaracion IT1, periodo 201806
+2025-09-02 02:52:51.401 -04:00 [INF] Delcaracion 606, periodo 201807
+2025-09-02 02:52:57.173 -04:00 [INF] Delcaracion 607, periodo 201807
+2025-09-02 02:53:00.265 -04:00 [INF] Delcaracion Anexo IT1, periodo 201807
+2025-09-02 02:53:18.263 -04:00 [INF] Delcaracion IT1, periodo 201807
+2025-09-02 02:53:40.467 -04:00 [INF] Delcaracion 606, periodo 201808
+2025-09-02 02:53:46.112 -04:00 [INF] Delcaracion 607, periodo 201808
+2025-09-02 02:53:48.902 -04:00 [INF] Delcaracion Anexo IT1, periodo 201808
+2025-09-02 02:54:07.124 -04:00 [INF] Delcaracion IT1, periodo 201808
+2025-09-02 02:54:27.594 -04:00 [INF] Delcaracion 606, periodo 201809
+2025-09-02 02:54:33.047 -04:00 [INF] Delcaracion 607, periodo 201809
+2025-09-02 02:54:35.904 -04:00 [INF] Delcaracion Anexo IT1, periodo 201809
+2025-09-02 02:54:54.087 -04:00 [INF] Delcaracion IT1, periodo 201809
+2025-09-02 02:55:14.766 -04:00 [INF] Delcaracion 606, periodo 201810
+2025-09-02 02:55:20.410 -04:00 [INF] Delcaracion 607, periodo 201810
+2025-09-02 02:55:23.629 -04:00 [INF] Delcaracion Anexo IT1, periodo 201810
+2025-09-02 02:55:42.364 -04:00 [INF] Delcaracion IT1, periodo 201810
+2025-09-02 02:56:03.585 -04:00 [INF] Delcaracion 606, periodo 201811
+2025-09-02 02:56:09.124 -04:00 [INF] Delcaracion 607, periodo 201811
+2025-09-02 02:56:12.123 -04:00 [INF] Delcaracion Anexo IT1, periodo 201811
+2025-09-02 02:56:29.898 -04:00 [INF] Delcaracion IT1, periodo 201811
+2025-09-02 02:56:50.042 -04:00 [INF] Delcaracion 606, periodo 201812
+2025-09-02 02:56:56.095 -04:00 [INF] Delcaracion 607, periodo 201812
+2025-09-02 02:56:59.253 -04:00 [INF] Delcaracion Anexo IT1, periodo 201812
+2025-09-02 02:57:17.305 -04:00 [INF] Delcaracion IT1, periodo 201812
+2025-09-02 02:57:38.004 -04:00 [INF] Delcaracion 606, periodo 201901
+2025-09-02 02:57:43.813 -04:00 [INF] Delcaracion 607, periodo 201901
+2025-09-02 02:57:46.970 -04:00 [INF] Delcaracion Anexo IT1, periodo 201901
+2025-09-02 02:58:05.616 -04:00 [INF] Delcaracion IT1, periodo 201901
+2025-09-02 02:58:26.703 -04:00 [INF] Delcaracion 606, periodo 201902
+2025-09-02 02:58:33.245 -04:00 [INF] Delcaracion 607, periodo 201902
+2025-09-02 02:58:36.192 -04:00 [INF] Delcaracion Anexo IT1, periodo 201902
+2025-09-02 02:58:55.768 -04:00 [INF] Delcaracion IT1, periodo 201902
+2025-09-02 02:59:16.559 -04:00 [INF] Delcaracion 606, periodo 201903
+2025-09-02 02:59:22.397 -04:00 [INF] Delcaracion 607, periodo 201903
+2025-09-02 02:59:25.471 -04:00 [INF] Delcaracion Anexo IT1, periodo 201903
+2025-09-02 02:59:43.865 -04:00 [INF] Delcaracion IT1, periodo 201903
+2025-09-02 03:00:04.640 -04:00 [INF] Delcaracion 606, periodo 201904
+2025-09-02 03:00:10.430 -04:00 [INF] Delcaracion 607, periodo 201904
+2025-09-02 03:00:13.508 -04:00 [INF] Delcaracion Anexo IT1, periodo 201904
+2025-09-02 03:00:31.979 -04:00 [INF] Delcaracion IT1, periodo 201904
+2025-09-02 03:00:52.503 -04:00 [INF] Delcaracion 606, periodo 201905
+2025-09-02 03:00:58.087 -04:00 [INF] Delcaracion 607, periodo 201905
+2025-09-02 03:01:01.292 -04:00 [INF] Delcaracion Anexo IT1, periodo 201905
+2025-09-02 03:01:20.872 -04:00 [INF] Delcaracion IT1, periodo 201905
+2025-09-02 03:01:41.611 -04:00 [INF] Delcaracion 606, periodo 201906
+2025-09-02 03:01:47.487 -04:00 [INF] Delcaracion 607, periodo 201906
+2025-09-02 03:01:50.358 -04:00 [INF] Delcaracion Anexo IT1, periodo 201906
+2025-09-02 03:02:09.454 -04:00 [INF] Delcaracion IT1, periodo 201906
+2025-09-02 03:02:30.989 -04:00 [INF] Delcaracion 606, periodo 201907
+2025-09-02 03:02:36.337 -04:00 [INF] Delcaracion 607, periodo 201907
+2025-09-02 03:02:39.335 -04:00 [INF] Delcaracion Anexo IT1, periodo 201907
+2025-09-02 03:02:57.787 -04:00 [INF] Delcaracion IT1, periodo 201907
+2025-09-02 03:03:18.561 -04:00 [INF] Delcaracion 606, periodo 201908
+2025-09-02 03:03:24.198 -04:00 [INF] Delcaracion 607, periodo 201908
+2025-09-02 03:03:27.875 -04:00 [INF] Delcaracion Anexo IT1, periodo 201908
+2025-09-02 03:03:48.269 -04:00 [INF] Delcaracion IT1, periodo 201908
+2025-09-02 03:04:09.589 -04:00 [INF] Delcaracion 606, periodo 201909
+2025-09-02 03:04:15.405 -04:00 [INF] Delcaracion 607, periodo 201909
+2025-09-02 03:04:18.338 -04:00 [INF] Delcaracion Anexo IT1, periodo 201909
+2025-09-02 03:04:37.694 -04:00 [INF] Delcaracion IT1, periodo 201909
+2025-09-02 03:04:59.947 -04:00 [INF] Delcaracion 606, periodo 201910
+2025-09-02 03:05:05.390 -04:00 [INF] Delcaracion 607, periodo 201910
+2025-09-02 03:05:08.380 -04:00 [INF] Delcaracion Anexo IT1, periodo 201910
+2025-09-02 03:05:26.940 -04:00 [INF] Delcaracion IT1, periodo 201910
+2025-09-02 03:05:48.740 -04:00 [INF] Delcaracion 606, periodo 201911
+2025-09-02 03:05:54.317 -04:00 [INF] Delcaracion 607, periodo 201911
+2025-09-02 03:05:57.445 -04:00 [INF] Delcaracion Anexo IT1, periodo 201911
+2025-09-02 03:06:13.587 -04:00 [ERR] Se produjo el siguiente error: Target closed (Session closed)
+2025-09-02 03:06:13.858 -04:00 [INF] Cierra la pagina y el browser
+2025-09-02 04:43:12.672 -04:00 [INF] pagina y browser Cerrado
+2025-09-02 11:39:00.163 -04:00 [INF] ========================================================================================
+2025-09-02 11:39:00.458 -04:00 [INF] Inicia el proceso para Rnc: 131254268
+2025-09-02 11:39:00.461 -04:00 [INF] inicializar el browser
+2025-09-02 11:39:08.958 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-02 11:39:09.322 -04:00 [INF] Hace login
+2025-09-02 11:39:17.132 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-02 11:39:32.249 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-02 11:39:32.251 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-02 11:39:34.071 -04:00 [INF] El nombre de la compania es DEVELOPMENT 088 SRL
+2025-09-02 11:39:34.073 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-02 11:39:35.666 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl06_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-02 11:39:50.722 -04:00 [INF] Delcaracion 606, periodo 201911
+2025-09-02 11:39:54.892 -04:00 [WRN] El periodo 201911 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2025-09-02 11:39:54.895 -04:00 [INF] Delcaracion 607, periodo 201911
+2025-09-02 11:39:58.811 -04:00 [WRN] El periodo 201911 ya se encuentra presentado para el 607, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2025-09-02 11:39:58.813 -04:00 [INF] Delcaracion Anexo IT1, periodo 201911
+2025-09-02 11:40:21.917 -04:00 [INF] Delcaracion IT1, periodo 201911
+2025-09-02 11:40:45.922 -04:00 [INF] Delcaracion 606, periodo 201912
+2025-09-02 11:40:52.929 -04:00 [INF] Delcaracion 607, periodo 201912
+2025-09-02 11:40:56.911 -04:00 [INF] Delcaracion Anexo IT1, periodo 201912
+2025-09-02 11:41:17.468 -04:00 [INF] Delcaracion IT1, periodo 201912
+2025-09-02 11:41:40.674 -04:00 [INF] Delcaracion 606, periodo 202001

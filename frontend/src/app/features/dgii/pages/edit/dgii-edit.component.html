@@ -1,0 +1,143 @@
+<div class="card p-fluid">
+    <p-toast />
+    <h5>Editar compañia</h5>
+    <div class="p-formgrid grid">
+        <div class="field col">
+            <label htmlFor="Rnc">Rnc</label>
+            <input pInputText type="text" id="Rnc" maxlength="11" [(ngModel)]="companyCredential.rnc" />
+        </div>
+        <div class="field col">
+            <label htmlFor="company">Compañia</label>
+            <input pInputText id="company" type="text" maxlength="128" [(ngModel)]="companyCredential.companyName" />
+        </div>
+    </div>
+    <div class="p-formgrid grid">
+        <div class="field col">
+            <label htmlFor="pwd">Password</label>
+            <input pInputText id="pwd" type="text" maxlength="128" [(ngModel)]="companyCredential.pwd" />
+        </div>
+        <div class="field col">
+            <div class="flex row pt-5">
+                <div class="flex align-items-center">
+                    <span>Token requerido</span>
+                    <p-inputSwitch [(ngModel)]="companyCredential.tokenRequired" class="px-2" />
+                </div>
+                <div class="flex align-items-center px-2">
+                    <span>Procesar</span>
+                    <p-inputSwitch [(ngModel)]="companyCredential.selectedForProcessing" class="px-2" />
+                </div>
+                <div class="flex align-items-center px-2">
+                    <span>Estatus</span>
+                    <p-inputSwitch [(ngModel)]="companyCredential.statusInd" class="px-2" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-formgrid grid">
+        <div class="field col-6">
+            <label htmlFor="manager">Asesor</label>
+            <p-dropdown
+                [options]="managers"
+                [(ngModel)]="selectedManager"
+                optionLabel="managerName"
+                [filter]="true"
+                filterBy="managerName"
+                [showClear]="true"
+                placeholder="Selecciona un asesor">
+            </p-dropdown>
+        </div>
+        <div class="field col-3 pt-5">
+            <input
+                type="file"
+                id="fileInput"
+                #fileInput
+                (change)="onFileChange($event)"
+                style="display: none"
+                accept="image/*,application/pdf"
+            />
+            <p-button
+                [label]="selectedFile !== null  ? selectedFile.name : 'Cargar Archivo'"
+                icon="pi pi-upload"
+                (click)="fileInput.click()"
+            ></p-button>
+        </div>
+    </div>
+
+    <div class="p-formgrid grid pt-3 pb-2" *ngIf="haveTokens || companyCredential.tokenRequired">
+        <p-fieldset legend="Tokens" class="field col-12 pt-5">
+            <p-table [value]="companyCredential.companyCredentialTokens" dataKey="tokenId" editMode="row" [tableStyle]="{'min-width': '80rem'}" styleClass="p-datatable-gridlines" >
+                <ng-template pTemplate="caption">
+					<div class="flex flex-column md:flex-row md:justify-content-start gap-2" *ngIf="!hideAddButton && !haveTokens">
+                        <p-button label="Agregar" [raised]="true" (onClick)="addRow()"/>
+					</div>
+				</ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>No.</th>
+                        <th>Valor</th>
+                        <th style="width:20%"></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-token let-editing="editing" let-ri="rowIndex">
+                    <tr [pEditableRow]="token">
+                        <td>{{token.tokenId}}</td>
+                        <td>
+                            <p-cellEditor>
+                                <ng-template pTemplate="input">
+                                    <input
+                                        minlength="4"
+                                        maxlength="5"
+                                        pInputText type="text"
+                                        [(ngModel)]="token.tokenValue"
+                                        required />
+                                </ng-template>
+                                <ng-template pTemplate="output">
+                                    {{token.tokenValue}}
+                                </ng-template>
+                            </p-cellEditor>
+                        </td>
+                        <td>
+                            <div class="flex align-items-center justify-content-center gap-2">
+                                <button
+                                    *ngIf="!editing"
+                                    pButton
+                                    pRipple
+                                    type="button"
+                                    pInitEditableRow
+                                    icon="pi pi-pencil"
+                                    (click)="onRowEditInit(token)"
+                                    class="p-button-rounded p-button-text">
+                                </button>
+                                <button
+                                    *ngIf="editing"
+                                    pButton
+                                    pRipple
+                                    type="button"
+                                    pSaveEditableRow
+                                    icon="pi pi-check"
+                                    (click)="onRowEditSave(token)"
+                                    class="p-button-rounded p-button-text p-button-success mr-2">
+                                </button>
+                                <button
+                                    *ngIf="editing"
+                                    pButton pRipple
+                                    type="button"
+                                    pCancelEditableRow
+                                    icon="pi pi-times"
+                                    (click)="onRowEditCancel(token, ri)"
+                                    class="p-button-rounded p-button-text p-button-danger">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-fieldset>
+    </div>
+
+    <div class="flex flex-wrap gap-3 justify-content-end">
+        <p-button label="Retornar al listado" [raised]="true" severity="secondary" (onClick)="redirectToList()" />
+        <p-button *ngIf="companyCredential.tokenFile !== null" label="Descargar tokens" [raised]="true" severity="secondary" (onClick)="downloadFile()" />
+        <p-button label="Actualizar" [raised]="true" (onClick)="updateCompany()" />
+    </div>
+</div>

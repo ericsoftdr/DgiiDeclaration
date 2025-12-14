@@ -1,0 +1,30 @@
+2025-09-05 02:03:19.478 -04:00 [INF] ========================================================================================
+2025-09-05 02:03:19.527 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-05 02:03:19.529 -04:00 [INF] inicializar el browser
+2025-09-05 02:03:28.414 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-05 02:03:28.805 -04:00 [INF] Hace login
+2025-09-05 02:03:37.386 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 34
+2025-09-05 02:03:40.299 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-05 02:03:40.911 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-05 02:03:56.010 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-05 02:03:56.012 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-05 02:03:57.900 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-05 02:03:57.903 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-05 02:04:03.573 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-05 02:05:21.127 -04:00 [INF] ========================================================================================
+2025-09-05 02:05:22.047 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-05 02:05:30.527 -04:00 [INF] inicializar el browser
+2025-09-05 02:05:32.628 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-05 02:05:33.031 -04:00 [INF] Hace login
+2025-09-05 02:05:39.020 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 33
+2025-09-05 02:05:41.474 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-05 02:05:42.347 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-05 02:05:57.430 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-05 02:05:57.432 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-05 02:05:59.071 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-05 02:06:03.701 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-05 02:06:06.925 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-05 02:06:24.469 -04:00 [INF] Delcaracion 606, periodo 200601
+2025-09-05 02:06:28.547 -04:00 [ERR] Se produjo el siguiente error: Hubo un error tratando de declarar el 606, el mensaje obtenido fue: Periodo no válido.
+2025-09-05 02:06:28.608 -04:00 [INF] Cierra la pagina y el browser
+2025-09-05 02:06:29.159 -04:00 [INF] pagina y browser Cerrado

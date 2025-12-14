@@ -1,0 +1,515 @@
+2025-09-09 20:00:09.455 -04:00 [INF] ========================================================================================
+2025-09-09 20:00:09.511 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-09 20:00:09.513 -04:00 [INF] inicializar el browser
+2025-09-09 20:00:15.898 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-09 20:00:16.588 -04:00 [INF] Hace login
+2025-09-09 20:00:33.700 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 22
+2025-09-09 20:00:36.668 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-09 20:00:38.022 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-09 20:00:53.097 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-09 20:00:53.100 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-09 20:00:56.236 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-09 20:01:02.888 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-09 20:01:05.442 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-09 20:01:23.705 -04:00 [INF] Delcaracion 606, periodo 200701
+2025-09-09 20:01:27.323 -04:00 [WRN] El periodo 200701 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 200701
+2025-09-09 20:01:27.324 -04:00 [INF] Delcaracion 607, periodo 200701
+2025-09-09 20:01:31.478 -04:00 [INF] Delcaracion IT1, periodo 200701
+2025-09-09 20:01:37.931 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 8
+2025-09-09 20:01:58.592 -04:00 [INF] Delcaracion 606, periodo 200702
+2025-09-09 20:02:08.127 -04:00 [INF] Delcaracion 607, periodo 200702
+2025-09-09 20:02:13.444 -04:00 [INF] Delcaracion IT1, periodo 200702
+2025-09-09 20:02:20.389 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 35
+2025-09-09 20:02:40.417 -04:00 [INF] Delcaracion 606, periodo 200703
+2025-09-09 20:02:47.658 -04:00 [INF] Delcaracion 607, periodo 200703
+2025-09-09 20:02:52.907 -04:00 [INF] Delcaracion IT1, periodo 200703
+2025-09-09 20:02:58.930 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 2
+2025-09-09 20:03:27.795 -04:00 [INF] Delcaracion 606, periodo 200704
+2025-09-09 20:03:34.872 -04:00 [INF] Delcaracion 607, periodo 200704
+2025-09-09 20:03:41.801 -04:00 [INF] Delcaracion IT1, periodo 200704
+2025-09-09 20:03:57.834 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 10
+2025-09-09 20:04:38.826 -04:00 [INF] Delcaracion 606, periodo 200705
+2025-09-09 20:04:55.697 -04:00 [INF] Delcaracion 607, periodo 200705
+2025-09-09 20:05:01.791 -04:00 [INF] Delcaracion IT1, periodo 200705
+2025-09-09 20:05:08.429 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 18
+2025-09-09 20:05:25.245 -04:00 [INF] Delcaracion 606, periodo 200706
+2025-09-09 20:05:33.236 -04:00 [INF] Delcaracion 607, periodo 200706
+2025-09-09 20:05:38.436 -04:00 [INF] Delcaracion IT1, periodo 200706
+2025-09-09 20:05:45.849 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 11
+2025-09-09 20:06:02.004 -04:00 [INF] Delcaracion 606, periodo 200707
+2025-09-09 20:06:08.797 -04:00 [INF] Delcaracion 607, periodo 200707
+2025-09-09 20:06:13.982 -04:00 [INF] Delcaracion IT1, periodo 200707
+2025-09-09 20:06:20.419 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:06:36.801 -04:00 [INF] Delcaracion 606, periodo 200708
+2025-09-09 20:06:42.759 -04:00 [INF] Delcaracion 607, periodo 200708
+2025-09-09 20:06:46.160 -04:00 [INF] Delcaracion IT1, periodo 200708
+2025-09-09 20:06:52.228 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 36
+2025-09-09 20:07:07.555 -04:00 [INF] Delcaracion 606, periodo 200709
+2025-09-09 20:07:13.613 -04:00 [INF] Delcaracion 607, periodo 200709
+2025-09-09 20:07:17.412 -04:00 [INF] Delcaracion IT1, periodo 200709
+2025-09-09 20:07:23.496 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 38
+2025-09-09 20:07:39.396 -04:00 [INF] Delcaracion 606, periodo 200710
+2025-09-09 20:07:45.355 -04:00 [INF] Delcaracion 607, periodo 200710
+2025-09-09 20:07:48.918 -04:00 [INF] Delcaracion IT1, periodo 200710
+2025-09-09 20:07:54.859 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 10
+2025-09-09 20:08:10.700 -04:00 [INF] Delcaracion 606, periodo 200711
+2025-09-09 20:08:16.820 -04:00 [INF] Delcaracion 607, periodo 200711
+2025-09-09 20:08:20.106 -04:00 [INF] Delcaracion IT1, periodo 200711
+2025-09-09 20:08:26.077 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 33
+2025-09-09 20:08:41.793 -04:00 [INF] Delcaracion 606, periodo 200712
+2025-09-09 20:08:47.962 -04:00 [INF] Delcaracion 607, periodo 200712
+2025-09-09 20:08:51.532 -04:00 [INF] Delcaracion IT1, periodo 200712
+2025-09-09 20:08:57.668 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 16
+2025-09-09 20:09:12.417 -04:00 [INF] Delcaracion 606, periodo 200801
+2025-09-09 20:09:18.578 -04:00 [INF] Delcaracion 607, periodo 200801
+2025-09-09 20:09:21.888 -04:00 [INF] Delcaracion IT1, periodo 200801
+2025-09-09 20:09:27.803 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 10
+2025-09-09 20:09:42.873 -04:00 [INF] Delcaracion 606, periodo 200802
+2025-09-09 20:09:48.587 -04:00 [INF] Delcaracion 607, periodo 200802
+2025-09-09 20:09:51.743 -04:00 [INF] Delcaracion IT1, periodo 200802
+2025-09-09 20:09:57.711 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 25
+2025-09-09 20:10:13.286 -04:00 [INF] Delcaracion 606, periodo 200803
+2025-09-09 20:10:19.410 -04:00 [INF] Delcaracion 607, periodo 200803
+2025-09-09 20:10:22.904 -04:00 [INF] Delcaracion IT1, periodo 200803
+2025-09-09 20:10:28.997 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 27
+2025-09-09 20:10:44.598 -04:00 [INF] Delcaracion 606, periodo 200804
+2025-09-09 20:10:50.623 -04:00 [INF] Delcaracion 607, periodo 200804
+2025-09-09 20:10:53.713 -04:00 [INF] Delcaracion IT1, periodo 200804
+2025-09-09 20:10:59.691 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 10
+2025-09-09 20:11:15.145 -04:00 [INF] Delcaracion 606, periodo 200805
+2025-09-09 20:11:20.829 -04:00 [INF] Delcaracion 607, periodo 200805
+2025-09-09 20:11:24.176 -04:00 [INF] Delcaracion IT1, periodo 200805
+2025-09-09 20:11:30.245 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 14
+2025-09-09 20:11:45.517 -04:00 [INF] Delcaracion 606, periodo 200806
+2025-09-09 20:11:51.314 -04:00 [INF] Delcaracion 607, periodo 200806
+2025-09-09 20:11:55.991 -04:00 [INF] Delcaracion IT1, periodo 200806
+2025-09-09 20:12:02.047 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 6
+2025-09-09 20:12:17.286 -04:00 [INF] Delcaracion 606, periodo 200807
+2025-09-09 20:12:23.193 -04:00 [INF] Delcaracion 607, periodo 200807
+2025-09-09 20:12:26.670 -04:00 [INF] Delcaracion IT1, periodo 200807
+2025-09-09 20:12:33.003 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 35
+2025-09-09 20:12:48.360 -04:00 [INF] Delcaracion 606, periodo 200808
+2025-09-09 20:12:54.563 -04:00 [INF] Delcaracion 607, periodo 200808
+2025-09-09 20:12:57.781 -04:00 [INF] Delcaracion IT1, periodo 200808
+2025-09-09 20:13:03.952 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:13:19.044 -04:00 [INF] Delcaracion 606, periodo 200809
+2025-09-09 20:13:25.076 -04:00 [INF] Delcaracion 607, periodo 200809
+2025-09-09 20:13:28.496 -04:00 [INF] Delcaracion IT1, periodo 200809
+2025-09-09 20:13:34.543 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 25
+2025-09-09 20:13:50.738 -04:00 [INF] Delcaracion 606, periodo 200810
+2025-09-09 20:13:56.539 -04:00 [INF] Delcaracion 607, periodo 200810
+2025-09-09 20:13:59.851 -04:00 [INF] Delcaracion IT1, periodo 200810
+2025-09-09 20:14:05.936 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 14
+2025-09-09 20:14:21.173 -04:00 [INF] Delcaracion 606, periodo 200811
+2025-09-09 20:14:27.046 -04:00 [INF] Delcaracion 607, periodo 200811
+2025-09-09 20:14:30.348 -04:00 [INF] Delcaracion IT1, periodo 200811
+2025-09-09 20:14:36.212 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 6
+2025-09-09 20:14:51.517 -04:00 [INF] Delcaracion 606, periodo 200812
+2025-09-09 20:14:57.285 -04:00 [INF] Delcaracion 607, periodo 200812
+2025-09-09 20:15:01.099 -04:00 [INF] Delcaracion IT1, periodo 200812
+2025-09-09 20:15:07.106 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 28
+2025-09-09 20:15:22.194 -04:00 [INF] Delcaracion 606, periodo 200901
+2025-09-09 20:15:28.098 -04:00 [INF] Delcaracion 607, periodo 200901
+2025-09-09 20:15:31.903 -04:00 [INF] Delcaracion IT1, periodo 200901
+2025-09-09 20:15:38.254 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 20
+2025-09-09 20:15:53.910 -04:00 [INF] Delcaracion 606, periodo 200902
+2025-09-09 20:15:59.930 -04:00 [INF] Delcaracion 607, periodo 200902
+2025-09-09 20:16:04.723 -04:00 [INF] Delcaracion IT1, periodo 200902
+2025-09-09 20:16:10.690 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 31
+2025-09-09 20:16:26.229 -04:00 [INF] Delcaracion 606, periodo 200903
+2025-09-09 20:16:32.102 -04:00 [INF] Delcaracion 607, periodo 200903
+2025-09-09 20:16:35.630 -04:00 [INF] Delcaracion IT1, periodo 200903
+2025-09-09 20:16:41.505 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:16:57.247 -04:00 [INF] Delcaracion 606, periodo 200904
+2025-09-09 20:17:03.289 -04:00 [INF] Delcaracion 607, periodo 200904
+2025-09-09 20:17:06.776 -04:00 [INF] Delcaracion IT1, periodo 200904
+2025-09-09 20:17:12.791 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 13
+2025-09-09 20:17:28.397 -04:00 [INF] Delcaracion 606, periodo 200905
+2025-09-09 20:17:34.152 -04:00 [INF] Delcaracion 607, periodo 200905
+2025-09-09 20:17:37.377 -04:00 [INF] Delcaracion IT1, periodo 200905
+2025-09-09 20:17:43.619 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 27
+2025-09-09 20:17:58.904 -04:00 [INF] Delcaracion 606, periodo 200906
+2025-09-09 20:18:04.877 -04:00 [INF] Delcaracion 607, periodo 200906
+2025-09-09 20:18:07.967 -04:00 [INF] Delcaracion IT1, periodo 200906
+2025-09-09 20:18:14.081 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 22
+2025-09-09 20:18:28.856 -04:00 [INF] Delcaracion 606, periodo 200907
+2025-09-09 20:18:34.671 -04:00 [INF] Delcaracion 607, periodo 200907
+2025-09-09 20:18:37.951 -04:00 [INF] Delcaracion IT1, periodo 200907
+2025-09-09 20:18:43.852 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 30
+2025-09-09 20:18:59.372 -04:00 [INF] Delcaracion 606, periodo 200908
+2025-09-09 20:19:05.341 -04:00 [INF] Delcaracion 607, periodo 200908
+2025-09-09 20:19:08.533 -04:00 [INF] Delcaracion IT1, periodo 200908
+2025-09-09 20:19:14.679 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 1
+2025-09-09 20:19:30.636 -04:00 [INF] Delcaracion 606, periodo 200909
+2025-09-09 20:19:36.632 -04:00 [INF] Delcaracion 607, periodo 200909
+2025-09-09 20:19:39.993 -04:00 [INF] Delcaracion IT1, periodo 200909
+2025-09-09 20:19:45.883 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 9
+2025-09-09 20:20:01.253 -04:00 [INF] Delcaracion 606, periodo 200910
+2025-09-09 20:20:07.341 -04:00 [INF] Delcaracion 607, periodo 200910
+2025-09-09 20:20:10.463 -04:00 [INF] Delcaracion IT1, periodo 200910
+2025-09-09 20:20:16.538 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 13
+2025-09-09 20:20:32.313 -04:00 [INF] Delcaracion 606, periodo 200911
+2025-09-09 20:20:38.966 -04:00 [INF] Delcaracion 607, periodo 200911
+2025-09-09 20:20:42.105 -04:00 [INF] Delcaracion IT1, periodo 200911
+2025-09-09 20:20:48.493 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 9
+2025-09-09 20:21:04.080 -04:00 [INF] Delcaracion 606, periodo 200912
+2025-09-09 20:21:10.224 -04:00 [INF] Delcaracion 607, periodo 200912
+2025-09-09 20:21:13.530 -04:00 [INF] Delcaracion IT1, periodo 200912
+2025-09-09 20:21:19.830 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 28
+2025-09-09 20:21:35.200 -04:00 [INF] Delcaracion 606, periodo 201001
+2025-09-09 20:21:41.238 -04:00 [INF] Delcaracion 607, periodo 201001
+2025-09-09 20:21:44.526 -04:00 [INF] Delcaracion IT1, periodo 201001
+2025-09-09 20:21:50.870 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 4
+2025-09-09 20:22:06.590 -04:00 [INF] Delcaracion 606, periodo 201002
+2025-09-09 20:22:12.540 -04:00 [INF] Delcaracion 607, periodo 201002
+2025-09-09 20:22:16.242 -04:00 [INF] Delcaracion IT1, periodo 201002
+2025-09-09 20:22:22.339 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 2
+2025-09-09 20:22:37.496 -04:00 [INF] Delcaracion 606, periodo 201003
+2025-09-09 20:22:43.920 -04:00 [INF] Delcaracion 607, periodo 201003
+2025-09-09 20:22:48.091 -04:00 [INF] Delcaracion IT1, periodo 201003
+2025-09-09 20:22:54.059 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 37
+2025-09-09 20:23:09.804 -04:00 [INF] Delcaracion 606, periodo 201004
+2025-09-09 20:23:15.801 -04:00 [INF] Delcaracion 607, periodo 201004
+2025-09-09 20:23:19.101 -04:00 [INF] Delcaracion IT1, periodo 201004
+2025-09-09 20:23:24.945 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 31
+2025-09-09 20:23:40.813 -04:00 [INF] Delcaracion 606, periodo 201005
+2025-09-09 20:23:47.066 -04:00 [INF] Delcaracion 607, periodo 201005
+2025-09-09 20:23:51.220 -04:00 [INF] Delcaracion IT1, periodo 201005
+2025-09-09 20:23:57.926 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 26
+2025-09-09 20:24:13.311 -04:00 [INF] Delcaracion 606, periodo 201006
+2025-09-09 20:24:19.776 -04:00 [INF] Delcaracion 607, periodo 201006
+2025-09-09 20:24:23.118 -04:00 [INF] Delcaracion IT1, periodo 201006
+2025-09-09 20:24:29.153 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 27
+2025-09-09 20:24:44.684 -04:00 [INF] Delcaracion 606, periodo 201007
+2025-09-09 20:24:50.328 -04:00 [INF] Delcaracion 607, periodo 201007
+2025-09-09 20:24:53.531 -04:00 [INF] Delcaracion IT1, periodo 201007
+2025-09-09 20:24:59.403 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 28
+2025-09-09 20:25:15.101 -04:00 [INF] Delcaracion 606, periodo 201008
+2025-09-09 20:25:21.193 -04:00 [INF] Delcaracion 607, periodo 201008
+2025-09-09 20:25:24.372 -04:00 [INF] Delcaracion IT1, periodo 201008
+2025-09-09 20:25:30.601 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:25:46.131 -04:00 [INF] Delcaracion 606, periodo 201009
+2025-09-09 20:25:52.270 -04:00 [INF] Delcaracion 607, periodo 201009
+2025-09-09 20:25:55.497 -04:00 [INF] Delcaracion IT1, periodo 201009
+2025-09-09 20:26:01.490 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 9
+2025-09-09 20:26:16.687 -04:00 [INF] Delcaracion 606, periodo 201010
+2025-09-09 20:26:22.483 -04:00 [INF] Delcaracion 607, periodo 201010
+2025-09-09 20:26:25.519 -04:00 [INF] Delcaracion IT1, periodo 201010
+2025-09-09 20:26:31.531 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 17
+2025-09-09 20:26:47.059 -04:00 [INF] Delcaracion 606, periodo 201011
+2025-09-09 20:26:53.506 -04:00 [INF] Delcaracion 607, periodo 201011
+2025-09-09 20:26:56.848 -04:00 [INF] Delcaracion IT1, periodo 201011
+2025-09-09 20:27:02.744 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 25
+2025-09-09 20:27:18.595 -04:00 [INF] Delcaracion 606, periodo 201012
+2025-09-09 20:27:24.772 -04:00 [INF] Delcaracion 607, periodo 201012
+2025-09-09 20:27:27.824 -04:00 [INF] Delcaracion IT1, periodo 201012
+2025-09-09 20:27:33.719 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 26
+2025-09-09 20:27:48.422 -04:00 [INF] Delcaracion 606, periodo 201101
+2025-09-09 20:27:53.977 -04:00 [INF] Delcaracion 607, periodo 201101
+2025-09-09 20:27:57.177 -04:00 [INF] Delcaracion IT1, periodo 201101
+2025-09-09 20:28:03.019 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 28
+2025-09-09 20:28:17.908 -04:00 [INF] Delcaracion 606, periodo 201102
+2025-09-09 20:28:24.048 -04:00 [INF] Delcaracion 607, periodo 201102
+2025-09-09 20:28:27.573 -04:00 [INF] Delcaracion IT1, periodo 201102
+2025-09-09 20:28:33.625 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 18
+2025-09-09 20:28:49.303 -04:00 [INF] Delcaracion 606, periodo 201103
+2025-09-09 20:28:55.182 -04:00 [INF] Delcaracion 607, periodo 201103
+2025-09-09 20:28:58.401 -04:00 [INF] Delcaracion IT1, periodo 201103
+2025-09-09 20:29:04.390 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 26
+2025-09-09 20:29:19.403 -04:00 [INF] Delcaracion 606, periodo 201104
+2025-09-09 20:29:25.218 -04:00 [INF] Delcaracion 607, periodo 201104
+2025-09-09 20:29:28.150 -04:00 [INF] Delcaracion IT1, periodo 201104
+2025-09-09 20:29:36.302 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 1
+2025-09-09 20:29:51.445 -04:00 [INF] Delcaracion 606, periodo 201105
+2025-09-09 20:29:57.355 -04:00 [INF] Delcaracion 607, periodo 201105
+2025-09-09 20:30:00.253 -04:00 [INF] Delcaracion IT1, periodo 201105
+2025-09-09 20:30:06.727 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 17
+2025-09-09 20:30:21.878 -04:00 [INF] Delcaracion 606, periodo 201106
+2025-09-09 20:30:27.555 -04:00 [INF] Delcaracion 607, periodo 201106
+2025-09-09 20:30:30.644 -04:00 [INF] Delcaracion IT1, periodo 201106
+2025-09-09 20:30:36.644 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 6
+2025-09-09 20:30:51.883 -04:00 [INF] Delcaracion 606, periodo 201107
+2025-09-09 20:30:57.808 -04:00 [INF] Delcaracion 607, periodo 201107
+2025-09-09 20:31:00.844 -04:00 [INF] Delcaracion IT1, periodo 201107
+2025-09-09 20:31:06.725 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 28
+2025-09-09 20:31:22.189 -04:00 [INF] Delcaracion 606, periodo 201108
+2025-09-09 20:31:28.099 -04:00 [INF] Delcaracion 607, periodo 201108
+2025-09-09 20:31:31.386 -04:00 [INF] Delcaracion IT1, periodo 201108
+2025-09-09 20:31:37.386 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 31
+2025-09-09 20:31:52.912 -04:00 [INF] Delcaracion 606, periodo 201109
+2025-09-09 20:31:59.257 -04:00 [INF] Delcaracion 607, periodo 201109
+2025-09-09 20:32:02.445 -04:00 [INF] Delcaracion IT1, periodo 201109
+2025-09-09 20:32:08.265 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 35
+2025-09-09 20:32:23.446 -04:00 [INF] Delcaracion 606, periodo 201110
+2025-09-09 20:32:29.372 -04:00 [INF] Delcaracion 607, periodo 201110
+2025-09-09 20:32:32.565 -04:00 [INF] Delcaracion IT1, periodo 201110
+2025-09-09 20:32:38.360 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 2
+2025-09-09 20:32:54.927 -04:00 [INF] Delcaracion 606, periodo 201111
+2025-09-09 20:33:00.774 -04:00 [INF] Delcaracion 607, periodo 201111
+2025-09-09 20:33:03.714 -04:00 [INF] Delcaracion IT1, periodo 201111
+2025-09-09 20:33:10.036 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 31
+2025-09-09 20:33:25.022 -04:00 [INF] Delcaracion 606, periodo 201112
+2025-09-09 20:33:30.960 -04:00 [INF] Delcaracion 607, periodo 201112
+2025-09-09 20:33:33.985 -04:00 [INF] Delcaracion IT1, periodo 201112
+2025-09-09 20:33:39.955 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 23
+2025-09-09 20:33:56.843 -04:00 [INF] Delcaracion 606, periodo 201201
+2025-09-09 20:34:03.755 -04:00 [INF] Delcaracion 607, periodo 201201
+2025-09-09 20:34:06.900 -04:00 [INF] Delcaracion IT1, periodo 201201
+2025-09-09 20:34:13.009 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 18
+2025-09-09 20:34:28.800 -04:00 [INF] Delcaracion 606, periodo 201202
+2025-09-09 20:34:34.878 -04:00 [INF] Delcaracion 607, periodo 201202
+2025-09-09 20:34:38.262 -04:00 [INF] Delcaracion IT1, periodo 201202
+2025-09-09 20:34:44.203 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 5
+2025-09-09 20:34:59.444 -04:00 [INF] Delcaracion 606, periodo 201203
+2025-09-09 20:35:05.270 -04:00 [INF] Delcaracion 607, periodo 201203
+2025-09-09 20:35:08.641 -04:00 [INF] Delcaracion IT1, periodo 201203
+2025-09-09 20:35:14.756 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 17
+2025-09-09 20:35:30.391 -04:00 [INF] Delcaracion 606, periodo 201204
+2025-09-09 20:35:36.199 -04:00 [INF] Delcaracion 607, periodo 201204
+2025-09-09 20:35:39.366 -04:00 [INF] Delcaracion IT1, periodo 201204
+2025-09-09 20:35:45.152 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 36
+2025-09-09 20:36:01.231 -04:00 [INF] Delcaracion 606, periodo 201205
+2025-09-09 20:36:07.322 -04:00 [INF] Delcaracion 607, periodo 201205
+2025-09-09 20:36:10.964 -04:00 [INF] Delcaracion IT1, periodo 201205
+2025-09-09 20:36:17.006 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 18
+2025-09-09 20:36:32.155 -04:00 [INF] Delcaracion 606, periodo 201206
+2025-09-09 20:36:37.834 -04:00 [INF] Delcaracion 607, periodo 201206
+2025-09-09 20:36:41.817 -04:00 [INF] Delcaracion IT1, periodo 201206
+2025-09-09 20:36:49.491 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 8
+2025-09-09 20:37:05.280 -04:00 [INF] Delcaracion 606, periodo 201207
+2025-09-09 20:37:11.425 -04:00 [INF] Delcaracion 607, periodo 201207
+2025-09-09 20:37:14.728 -04:00 [INF] Delcaracion IT1, periodo 201207
+2025-09-09 20:37:20.518 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 17
+2025-09-09 20:37:35.406 -04:00 [INF] Delcaracion 606, periodo 201208
+2025-09-09 20:37:41.826 -04:00 [INF] Delcaracion 607, periodo 201208
+2025-09-09 20:37:45.056 -04:00 [INF] Delcaracion IT1, periodo 201208
+2025-09-09 20:37:51.173 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:38:06.748 -04:00 [INF] Delcaracion 606, periodo 201209
+2025-09-09 20:38:12.430 -04:00 [INF] Delcaracion 607, periodo 201209
+2025-09-09 20:38:15.461 -04:00 [INF] Delcaracion IT1, periodo 201209
+2025-09-09 20:38:21.572 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 30
+2025-09-09 20:38:36.647 -04:00 [INF] Delcaracion 606, periodo 201210
+2025-09-09 20:38:42.435 -04:00 [INF] Delcaracion 607, periodo 201210
+2025-09-09 20:38:45.896 -04:00 [INF] Delcaracion IT1, periodo 201210
+2025-09-09 20:38:51.888 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 21
+2025-09-09 20:39:07.074 -04:00 [INF] Delcaracion 606, periodo 201211
+2025-09-09 20:39:12.980 -04:00 [INF] Delcaracion 607, periodo 201211
+2025-09-09 20:39:16.435 -04:00 [INF] Delcaracion IT1, periodo 201211
+2025-09-09 20:39:22.181 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 11
+2025-09-09 20:39:37.666 -04:00 [INF] Delcaracion 606, periodo 201212
+2025-09-09 20:39:43.412 -04:00 [INF] Delcaracion 607, periodo 201212
+2025-09-09 20:39:46.421 -04:00 [INF] Delcaracion IT1, periodo 201212
+2025-09-09 20:39:52.468 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 25
+2025-09-09 20:40:08.624 -04:00 [INF] Delcaracion 606, periodo 201301
+2025-09-09 20:40:14.427 -04:00 [INF] Delcaracion 607, periodo 201301
+2025-09-09 20:40:17.638 -04:00 [INF] Delcaracion IT1, periodo 201301
+2025-09-09 20:40:23.625 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 33
+2025-09-09 20:40:38.651 -04:00 [INF] Delcaracion 606, periodo 201302
+2025-09-09 20:40:44.291 -04:00 [INF] Delcaracion 607, periodo 201302
+2025-09-09 20:40:47.309 -04:00 [INF] Delcaracion IT1, periodo 201302
+2025-09-09 20:40:53.088 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 2
+2025-09-09 20:41:09.542 -04:00 [INF] Delcaracion 606, periodo 201303
+2025-09-09 20:41:16.126 -04:00 [INF] Delcaracion 607, periodo 201303
+2025-09-09 20:41:19.379 -04:00 [INF] Delcaracion IT1, periodo 201303
+2025-09-09 20:41:25.415 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 11
+2025-09-09 20:41:40.116 -04:00 [INF] Delcaracion 606, periodo 201304
+2025-09-09 20:41:46.224 -04:00 [INF] Delcaracion 607, periodo 201304
+2025-09-09 20:41:49.380 -04:00 [INF] Delcaracion IT1, periodo 201304
+2025-09-09 20:41:55.879 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 22
+2025-09-09 20:42:11.319 -04:00 [INF] Delcaracion 606, periodo 201305
+2025-09-09 20:42:17.356 -04:00 [INF] Delcaracion 607, periodo 201305
+2025-09-09 20:42:20.548 -04:00 [INF] Delcaracion IT1, periodo 201305
+2025-09-09 20:42:26.527 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 12
+2025-09-09 20:42:41.540 -04:00 [INF] Delcaracion 606, periodo 201306
+2025-09-09 20:42:47.135 -04:00 [INF] Delcaracion 607, periodo 201306
+2025-09-09 20:42:50.442 -04:00 [INF] Delcaracion IT1, periodo 201306
+2025-09-09 20:42:56.272 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 20
+2025-09-09 20:43:11.191 -04:00 [INF] Delcaracion 606, periodo 201307
+2025-09-09 20:43:16.933 -04:00 [INF] Delcaracion 607, periodo 201307
+2025-09-09 20:43:20.097 -04:00 [INF] Delcaracion IT1, periodo 201307
+2025-09-09 20:43:25.989 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 35
+2025-09-09 20:43:41.155 -04:00 [INF] Delcaracion 606, periodo 201308
+2025-09-09 20:43:47.068 -04:00 [INF] Delcaracion 607, periodo 201308
+2025-09-09 20:43:51.234 -04:00 [INF] Delcaracion IT1, periodo 201308
+2025-09-09 20:43:57.304 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 14
+2025-09-09 20:44:12.777 -04:00 [INF] Delcaracion 606, periodo 201309
+2025-09-09 20:44:18.663 -04:00 [INF] Delcaracion 607, periodo 201309
+2025-09-09 20:44:21.793 -04:00 [INF] Delcaracion IT1, periodo 201309
+2025-09-09 20:44:27.632 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:44:43.041 -04:00 [INF] Delcaracion 606, periodo 201310
+2025-09-09 20:44:48.687 -04:00 [INF] Delcaracion 607, periodo 201310
+2025-09-09 20:44:51.900 -04:00 [INF] Delcaracion IT1, periodo 201310
+2025-09-09 20:44:58.079 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 33
+2025-09-09 20:45:13.253 -04:00 [INF] Delcaracion 606, periodo 201311
+2025-09-09 20:45:19.966 -04:00 [INF] Delcaracion 607, periodo 201311
+2025-09-09 20:45:23.041 -04:00 [INF] Delcaracion IT1, periodo 201311
+2025-09-09 20:45:28.997 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 23
+2025-09-09 20:45:44.132 -04:00 [INF] Delcaracion 606, periodo 201312
+2025-09-09 20:45:49.990 -04:00 [INF] Delcaracion 607, periodo 201312
+2025-09-09 20:45:52.894 -04:00 [INF] Delcaracion IT1, periodo 201312
+2025-09-09 20:45:59.006 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 2
+2025-09-09 20:46:14.415 -04:00 [INF] Delcaracion 606, periodo 201401
+2025-09-09 20:46:20.094 -04:00 [INF] Delcaracion 607, periodo 201401
+2025-09-09 20:46:23.055 -04:00 [INF] Delcaracion IT1, periodo 201401
+2025-09-09 20:46:29.072 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 37
+2025-09-09 20:46:44.292 -04:00 [INF] Delcaracion 606, periodo 201402
+2025-09-09 20:46:50.971 -04:00 [INF] Delcaracion 607, periodo 201402
+2025-09-09 20:46:54.202 -04:00 [INF] Delcaracion IT1, periodo 201402
+2025-09-09 20:47:00.685 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 26
+2025-09-09 20:47:15.633 -04:00 [INF] Delcaracion 606, periodo 201403
+2025-09-09 20:47:21.612 -04:00 [INF] Delcaracion 607, periodo 201403
+2025-09-09 20:47:25.009 -04:00 [INF] Delcaracion IT1, periodo 201403
+2025-09-09 20:47:31.054 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 31
+2025-09-09 20:47:46.284 -04:00 [INF] Delcaracion 606, periodo 201404
+2025-09-09 20:47:52.775 -04:00 [INF] Delcaracion 607, periodo 201404
+2025-09-09 20:47:56.321 -04:00 [INF] Delcaracion IT1, periodo 201404
+2025-09-09 20:48:02.353 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 7
+2025-09-09 20:48:18.151 -04:00 [INF] Delcaracion 606, periodo 201405
+2025-09-09 20:48:23.760 -04:00 [INF] Delcaracion 607, periodo 201405
+2025-09-09 20:48:26.929 -04:00 [INF] Delcaracion IT1, periodo 201405
+2025-09-09 20:48:32.910 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 17
+2025-09-09 20:48:48.447 -04:00 [INF] Delcaracion 606, periodo 201406
+2025-09-09 20:48:54.161 -04:00 [INF] Delcaracion 607, periodo 201406
+2025-09-09 20:48:57.359 -04:00 [INF] Delcaracion IT1, periodo 201406
+2025-09-09 20:49:03.453 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 29
+2025-09-09 20:49:18.603 -04:00 [INF] Delcaracion 606, periodo 201407
+2025-09-09 20:49:24.890 -04:00 [INF] Delcaracion 607, periodo 201407
+2025-09-09 20:49:27.982 -04:00 [INF] Delcaracion IT1, periodo 201407
+2025-09-09 20:49:33.948 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 19
+2025-09-09 20:49:50.255 -04:00 [INF] Delcaracion 606, periodo 201408
+2025-09-09 20:49:56.014 -04:00 [INF] Delcaracion 607, periodo 201408
+2025-09-09 20:49:58.981 -04:00 [INF] Delcaracion IT1, periodo 201408
+2025-09-09 20:50:04.955 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 37
+2025-09-09 20:50:20.890 -04:00 [INF] Delcaracion 606, periodo 201409
+2025-09-09 20:50:26.606 -04:00 [INF] Delcaracion 607, periodo 201409
+2025-09-09 20:50:29.575 -04:00 [INF] Delcaracion IT1, periodo 201409
+2025-09-09 20:50:35.405 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 35
+2025-09-09 20:50:51.037 -04:00 [INF] Delcaracion 606, periodo 201410
+2025-09-09 20:50:56.987 -04:00 [INF] Delcaracion 607, periodo 201410
+2025-09-09 20:51:00.179 -04:00 [INF] Delcaracion IT1, periodo 201410
+2025-09-09 20:51:06.229 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 16
+2025-09-09 20:51:21.552 -04:00 [INF] Delcaracion 606, periodo 201411
+2025-09-09 20:51:27.115 -04:00 [INF] Delcaracion 607, periodo 201411
+2025-09-09 20:51:30.938 -04:00 [INF] Delcaracion IT1, periodo 201411
+2025-09-09 20:51:37.061 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 18
+2025-09-09 20:51:52.017 -04:00 [INF] Delcaracion 606, periodo 201412
+2025-09-09 20:51:57.639 -04:00 [INF] Delcaracion 607, periodo 201412
+2025-09-09 20:52:01.020 -04:00 [INF] Delcaracion IT1, periodo 201412
+2025-09-09 20:52:07.043 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 37
+2025-09-09 20:52:22.680 -04:00 [INF] Delcaracion 606, periodo 201501
+2025-09-09 20:52:25.389 -04:00 [WRN] El periodo 201501 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201501
+2025-09-09 20:52:25.392 -04:00 [INF] Delcaracion 607, periodo 201501
+2025-09-09 20:52:28.544 -04:00 [INF] Delcaracion IT1, periodo 201501
+2025-09-09 20:52:34.289 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 34
+2025-09-09 20:52:50.088 -04:00 [INF] Delcaracion 606, periodo 201502
+2025-09-09 20:52:56.050 -04:00 [INF] Delcaracion 607, periodo 201502
+2025-09-09 20:52:59.511 -04:00 [INF] Delcaracion IT1, periodo 201502
+2025-09-09 20:53:05.844 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 32
+2025-09-09 20:53:21.241 -04:00 [INF] Delcaracion 606, periodo 201503
+2025-09-09 20:53:24.429 -04:00 [WRN] El periodo 201503 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201503
+2025-09-09 20:53:24.431 -04:00 [INF] Delcaracion 607, periodo 201503
+2025-09-09 20:53:27.574 -04:00 [INF] Delcaracion IT1, periodo 201503
+2025-09-09 20:53:33.779 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 12
+2025-09-09 20:53:49.537 -04:00 [INF] Delcaracion 606, periodo 201504
+2025-09-09 20:53:55.337 -04:00 [INF] Delcaracion 607, periodo 201504
+2025-09-09 20:53:58.510 -04:00 [INF] Delcaracion IT1, periodo 201504
+2025-09-09 20:54:04.734 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 12
+2025-09-09 20:54:21.238 -04:00 [INF] Delcaracion 606, periodo 201505
+2025-09-09 20:54:24.779 -04:00 [WRN] El periodo 201505 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201505
+2025-09-09 20:54:24.781 -04:00 [INF] Delcaracion 607, periodo 201505
+2025-09-09 20:54:27.823 -04:00 [INF] Delcaracion IT1, periodo 201505
+2025-09-09 20:54:33.867 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 12
+2025-09-09 20:54:46.563 -04:00 [ERR] Se produjo el siguiente error: Target closed (Session closed)
+2025-09-09 20:54:46.647 -04:00 [INF] Cierra la pagina y el browser
+2025-09-09 21:07:46.326 -04:00 [INF] pagina y browser Cerrado
+2025-09-09 21:11:18.546 -04:00 [INF] ========================================================================================
+2025-09-09 21:11:18.618 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-09 21:11:18.621 -04:00 [INF] inicializar el browser
+2025-09-09 21:11:20.203 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-09 21:11:20.587 -04:00 [INF] Hace login
+2025-09-09 21:11:26.417 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 37
+2025-09-09 21:11:28.418 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-09 21:11:28.630 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-09 21:11:43.712 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-09 21:11:43.714 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-09 21:11:45.295 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-09 21:11:51.654 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-09 21:11:53.117 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-09 21:11:58.403 -04:00 [INF] Delcaracion 606, periodo 201505
+2025-09-09 21:12:01.514 -04:00 [WRN] El periodo 201505 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201505
+2025-09-09 21:12:01.516 -04:00 [INF] Delcaracion 607, periodo 201505
+2025-09-09 21:12:04.552 -04:00 [WRN] El periodo 201505 ya se encuentra presentado para el 607, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201505
+2025-09-09 21:12:04.554 -04:00 [INF] Delcaracion IT1, periodo 201505
+2025-09-09 21:14:23.154 -04:00 [INF] ========================================================================================
+2025-09-09 21:14:23.219 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-09 21:14:23.221 -04:00 [INF] inicializar el browser
+2025-09-09 21:14:24.919 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-09 21:14:25.268 -04:00 [INF] Hace login
+2025-09-09 21:14:34.028 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 16
+2025-09-09 21:14:35.978 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-09 21:14:36.223 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-09 21:14:51.299 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-09 21:14:51.301 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-09 21:14:52.894 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-09 21:14:58.142 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-09 21:14:59.833 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-09 21:15:07.502 -04:00 [INF] Delcaracion 606, periodo 201505
+2025-09-09 21:15:10.626 -04:00 [WRN] El periodo 201505 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201505
+2025-09-09 21:15:10.628 -04:00 [INF] Delcaracion 607, periodo 201505
+2025-09-09 21:15:14.711 -04:00 [WRN] El periodo 201505 ya se encuentra presentado para el 607, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201505
+2025-09-09 21:15:14.712 -04:00 [INF] Delcaracion IT1, periodo 201505
+2025-09-09 21:19:48.838 -04:00 [INF] ========================================================================================
+2025-09-09 21:19:48.991 -04:00 [INF] Inicia el proceso para Rnc: 130344061
+2025-09-09 21:19:48.994 -04:00 [INF] inicializar el browser
+2025-09-09 21:19:59.570 -04:00 [INF] Busca los datos del RNC en la BD
+2025-09-09 21:20:00.106 -04:00 [INF] Hace login
+2025-09-09 21:20:06.462 -04:00 [INF] El id de la tarjeta de codigo que debe digitado para iniciar sesion es: 10
+2025-09-09 21:20:09.369 -04:00 [INF] errorMessageWithTokenTask:False; navigationWithTokenTask:True 
+2025-09-09 21:20:09.640 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2025-09-09 21:20:24.718 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2025-09-09 21:20:24.720 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2025-09-09 21:20:26.419 -04:00 [INF] El nombre de la compania es CORPORACION 82460 SRL
+2025-09-09 21:20:26.421 -04:00 [INF] Determina ultimo periodo declarado.
+2025-09-09 21:20:27.975 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl05_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2025-09-09 21:20:32.037 -04:00 [INF] Delcaracion 606, periodo 201506
+2025-09-09 21:20:35.881 -04:00 [WRN] El periodo 201506 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201506
+2025-09-09 21:20:35.883 -04:00 [INF] Delcaracion 607, periodo 201506
+2025-09-09 21:20:39.859 -04:00 [INF] Delcaracion IT1, periodo 201506
+2025-09-09 21:20:46.085 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 8
+2025-09-09 21:21:03.259 -04:00 [INF] Delcaracion 606, periodo 201507
+2025-09-09 21:21:07.064 -04:00 [WRN] El periodo 201507 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201507
+2025-09-09 21:21:07.067 -04:00 [INF] Delcaracion 607, periodo 201507
+2025-09-09 21:21:10.973 -04:00 [INF] Delcaracion IT1, periodo 201507
+2025-09-09 21:21:17.649 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 30
+2025-09-09 21:21:33.505 -04:00 [INF] Delcaracion 606, periodo 201508
+2025-09-09 21:21:37.046 -04:00 [WRN] El periodo 201508 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201508
+2025-09-09 21:21:37.053 -04:00 [INF] Delcaracion 607, periodo 201508
+2025-09-09 21:21:41.066 -04:00 [INF] Delcaracion IT1, periodo 201508
+2025-09-09 21:21:47.481 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 21
+2025-09-09 21:22:04.546 -04:00 [INF] Delcaracion 606, periodo 201509
+2025-09-09 21:22:08.208 -04:00 [WRN] El periodo 201509 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201509
+2025-09-09 21:22:08.211 -04:00 [INF] Delcaracion 607, periodo 201509
+2025-09-09 21:22:12.212 -04:00 [INF] Delcaracion IT1, periodo 201509
+2025-09-09 21:22:19.052 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 38
+2025-09-09 21:22:36.025 -04:00 [INF] Delcaracion 606, periodo 201510
+2025-09-09 21:22:39.662 -04:00 [WRN] El periodo 201510 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201510
+2025-09-09 21:22:39.664 -04:00 [INF] Delcaracion 607, periodo 201510
+2025-09-09 21:22:43.393 -04:00 [INF] Delcaracion IT1, periodo 201510
+2025-09-09 21:22:50.088 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 29
+2025-09-09 21:23:07.119 -04:00 [INF] Delcaracion 606, periodo 201511
+2025-09-09 21:23:10.853 -04:00 [WRN] El periodo 201511 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201511
+2025-09-09 21:23:10.861 -04:00 [INF] Delcaracion 607, periodo 201511
+2025-09-09 21:23:15.109 -04:00 [INF] Delcaracion IT1, periodo 201511
+2025-09-09 21:23:21.347 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 25
+2025-09-09 21:23:37.566 -04:00 [INF] Delcaracion 606, periodo 201512
+2025-09-09 21:23:41.111 -04:00 [WRN] El periodo 201512 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: El contribuyente ya tiene un formato presentado en el periodo: 201512
+2025-09-09 21:23:41.114 -04:00 [INF] Delcaracion 607, periodo 201512
+2025-09-09 21:23:47.919 -04:00 [INF] Delcaracion IT1, periodo 201512
+2025-09-09 21:23:54.186 -04:00 [INF] El id de la tarjeta de codigo que debe ser digitado es: 19
+2025-09-09 21:24:11.260 -04:00 [INF] Se concluyo la parte de claracion de ITBIS. La especificacion de formulario a declara es: ''All''. Esto se evalua antes de iniciar el proceso de IR3.
+2025-09-09 21:24:11.263 -04:00 [INF] Determina si requiere declaracion de IR3.
+2025-09-09 21:24:14.065 -04:00 [INF] Declaración de IR3 NO requerida.
+2025-09-09 21:24:14.489 -04:00 [INF] Cierra sesion
+2025-09-09 21:24:14.504 -04:00 [INF] Espera finaliza navegacion luego del cierre de sesion.
+2025-09-09 21:24:17.149 -04:00 [INF] Cierra la pagina y el browser
+2025-09-09 21:24:17.799 -04:00 [INF] pagina y browser Cerrado

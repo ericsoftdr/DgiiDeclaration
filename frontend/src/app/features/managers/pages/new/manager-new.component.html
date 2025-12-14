@@ -1,0 +1,21 @@
+<div class="card p-fluid">
+    <p-toast/>
+    <h5>Registrar Asesor</h5>
+    <div class="p-formgrid grid">
+        <div class="field col">
+            <label htmlFor="name">Nombre</label>
+            <input pInputText type="text" id="name" [(ngModel)]="manager.managerName"/>
+        </div>
+        <div class="field col">
+            <label htmlFor="company">Empresa</label>
+            <input pInputText id="company" type="text" [(ngModel)]="manager.businessName"/>
+        </div>
+    </div>
+
+
+
+    <div class="flex flex-wrap gap-3 justify-content-end">
+        <p-button label="Retornar al listado" [raised]="true" severity="secondary" (onClick)="redirectToList()"/>
+        <p-button label="Guardar" [raised]="true" (onClick)="saveManager()"/>
+    </div>
+</div>

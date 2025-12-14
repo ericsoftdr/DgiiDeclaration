@@ -1,0 +1,32 @@
+2024-07-26 23:13:04.010 -04:00 [INF] ========================================================================================
+2024-07-26 23:13:04.052 -04:00 [INF] Inicia el proceso para Rnc: 132429583
+2024-07-26 23:13:04.055 -04:00 [INF] inicializar el browser
+2024-07-26 23:13:08.415 -04:00 [INF] Busca los datos del RNC en la BD
+2024-07-26 23:13:08.680 -04:00 [INF] Hace login
+2024-07-26 23:13:15.103 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2024-07-26 23:13:30.196 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2024-07-26 23:13:30.201 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2024-07-26 23:13:31.979 -04:00 [INF] El nombre de la compania es FRAME HERITAGE ASSETS SRO
+2024-07-26 23:13:31.980 -04:00 [INF] Determina ultimo periodo declarado.
+2024-07-26 23:13:33.566 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl06_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2024-07-26 23:13:37.750 -04:00 [INF] Delcaracion 606, periodo 202403
+2024-07-26 23:13:40.973 -04:00 [WRN] El periodo 202403 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2024-07-26 23:13:40.975 -04:00 [INF] Delcaracion 607, periodo 202403
+2024-07-26 23:13:44.066 -04:00 [WRN] El periodo 202403 ya se encuentra presentado para el 607, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2024-07-26 23:13:44.068 -04:00 [INF] Delcaracion Anexo IT1, periodo 202403
+2024-07-26 23:16:20.878 -04:00 [INF] ========================================================================================
+2024-07-26 23:16:20.938 -04:00 [INF] Inicia el proceso para Rnc: 132429583
+2024-07-26 23:16:20.943 -04:00 [INF] inicializar el browser
+2024-07-26 23:16:22.108 -04:00 [INF] Busca los datos del RNC en la BD
+2024-07-26 23:16:22.326 -04:00 [INF] Hace login
+2024-07-26 23:16:27.760 -04:00 [INF] Espera por el Iframe que indica si hay mensajes por leer
+2024-07-26 23:16:42.847 -04:00 [INF] TimeoutException: El iframe no fue encontrado dentro del tiempo esperado. Detalles: Timeout of 15000 ms exceeded
+2024-07-26 23:16:42.851 -04:00 [INF] Busca el nombre de la compania (Razon Social) en la pagina
+2024-07-26 23:16:44.459 -04:00 [INF] El nombre de la compania es FRAME HERITAGE ASSETS SRO
+2024-07-26 23:16:44.461 -04:00 [INF] Determina ultimo periodo declarado.
+2024-07-26 23:16:45.933 -04:00 [INF] Id del link del formulario IT1: ctl00_ContentPlaceHolder1_dgResumenDoc_ctl06_HyperLink2, esto es para dar click y buscar el ultimo período reportado.
+2024-07-26 23:16:50.054 -04:00 [INF] Delcaracion 606, periodo 202403
+2024-07-26 23:16:53.279 -04:00 [WRN] El periodo 202403 ya se encuentra presentado para el 606, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2024-07-26 23:16:53.284 -04:00 [INF] Delcaracion 607, periodo 202403
+2024-07-26 23:16:56.402 -04:00 [WRN] El periodo 202403 ya se encuentra presentado para el 607, el mensaje obtenido de la DGII fue: Periodo digitado no válido. Este periodo ya se encuentra presentado
+2024-07-26 23:16:56.403 -04:00 [INF] Delcaracion Anexo IT1, periodo 202403

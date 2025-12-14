@@ -1,0 +1,118 @@
+<div class="grid" >
+    <p-toast />
+    <p-confirmDialog />
+	<div class="col-12">
+		<div class="card">
+			<h5>Compañias</h5>
+			<p-table #dt1 [(selection)]="selectedCompanies" [value]="filteredCredentials" dataKey="id" [rows]="10" [rowHover]="true" styleClass="p-datatable-gridlines" [paginator]="true" [globalFilterFields]="['managerName']" responsiveLayout="scroll">
+				<ng-template pTemplate="caption">
+					<div class="flex flex-column md:flex-row md:justify-content-start gap-2">
+                        <p-button label="Nuevo" [raised]="true" (onClick)="redirectToCreate()"/>
+                        <p-button *ngIf="selectedCompanies.length > 0" label="Procesar" [raised]="true" (onClick)="processCompanies($event)"/>
+						<span class="p-input-icon-left">
+                            <i class="pi pi-search"></i>
+                            <input type="search" pInputText placeholder="Busqueda..." [(ngModel)]="filterText" (ngModelChange)="filterData()" >
+                        </span>
+					</div>
+				</ng-template>
+				<ng-template pTemplate="header">
+                    <tr>
+                      <th style="width: 4rem"><p-tableHeaderCheckbox /></th>
+                      <th>RNC</th>
+                      <th>Empresa</th>
+                      <th style="min-width:15rem">
+                        <div class="flex align-items-center">
+                            Asesor
+                            <p-columnFilter field="accountingManager" matchMode="in" display="menu" [showMatchModes]="false" [showOperator]="false" [showAddButton]="false">
+                                <ng-template pTemplate="header">
+                                    <div class="px-3 pt-3 pb-0">
+                                        <span class="font-bold">Asesores</span>
+                                    </div>
+                                </ng-template>
+                                <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                    <p-multiSelect [ngModel]="value" [options]="managers" placeholder="Asesores" (onChange)="filter($event.value)" optionLabel="managerName">
+                                        <ng-template let-option pTemplate="item">
+                                            <div class="inline-block vertical-align-middle">
+                                                <span class="ml-1 mt-1">{{ option.managerName }}</span>
+                                            </div>
+                                        </ng-template>
+                                    </p-multiSelect>
+                                </ng-template>
+                            </p-columnFilter>
+                        </div>
+                    </th>
+                      <th>
+                        <div class="flex justify-content-between align-items-center">
+                            Procesar
+                            <p-columnFilter type="boolean" field="selectedForProcessing" display="menu"></p-columnFilter>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-content-between align-items-center">
+                            Estado
+                            <p-columnFilter type="boolean" field="statusInd" display="menu"></p-columnFilter>
+                        </div>
+                      </th>
+                      <th >
+                        <div class="flex justify-content-between align-items-center">
+                            Token Requerido
+                            <p-columnFilter type="boolean" field="tokenRequired" display="menu"></p-columnFilter>
+                        </div>
+                      </th>
+                      <th>Ultima Ejecución</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </ng-template>
+                  <ng-template pTemplate="body" let-credential>
+                    <tr>
+                        <td>
+                            <p-tableCheckbox [value]="credential" />
+                        </td>
+                        <td>{{ credential.rnc }}</td>
+                        <td>{{ credential.companyName }}</td>
+                        <td>{{ credential.accountingManager.managerName }}</td>
+                        <td>
+                            <p-tag [value]="credential.selectedForProcessing ? 'SI' : 'NO'" [severity]="getSeverity(credential.statusInd)" styleClass="w-full md:w-4rem" />
+                        </td>
+                        <td>
+                            <p-tag [value]="credential.statusInd ? 'Activo' : 'Inactivo'" [severity]="getSeverity(credential.statusInd)" styleClass="w-full md:w-4rem" />
+                        </td>
+                        <td>
+                            <p-tag [value]="credential.tokenRequired ? 'SI' : 'NO'" [severity]="getSeverity(credential.tokenRequired)" styleClass="w-full md:w-4rem" />
+                        </td>
+                        <td>{{ credential.dateProcessed | date: 'dd/MM/yyyy h:mm a' }}</td>
+                        <td>
+                            <div class="flex justify-content-center">
+                                <p-button icon="pi pi-align-justify" (click)="showMenu($event, credential)" [rounded]="true" [text]="true" severity="secondary" />
+                                <p-overlayPanel #op [for]="'op_' + credential.id" [showCloseIcon]="true">
+                                    <div class="menu-content">
+                                        <div>
+                                            <p-button label="Link" icon="pi pi-eye" [link]="true" (click)="showDetails(selectedCredential)" label="Detalle" />
+                                        </div>
+                                        <div>
+                                            <p-button icon="pi pi-pencil" label="Editar" [link]="true" (click)="editCompany(selectedCredential.id)" />
+                                        </div>
+                                        <div>
+                                            <p-button label="Eliminar" icon="pi pi-eraser" [link]="true" (click)="deleteCompany($event)" />
+                                        </div>
+                                        <div>
+                                            <p-button *ngIf="canDownload" label="Descargar archivo" icon="pi pi-download" [link]="true" (click)="downloadFile(selectedCredential)" />
+                                        </div>
+                                    </div>
+                                </p-overlayPanel>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+
+    		</p-table>
+		</div>
+	</div>
+</div>
+
+<dgii-detail *ngIf="displayDetailDialog"
+    [(visible)]="displayDetailDialog"
+    [companyCredential]="selectedCompany"
+    [selectedManager]="selectedManager">
+</dgii-detail>
+
