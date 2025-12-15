@@ -31,11 +31,9 @@ import { DetailDialogComponent } from '../../components/detail/dgii-detail.compo
 export class DgiiComponent implements OnInit {
  @ViewChild('op', { static: false }) overlayPanel: OverlayPanel;
   companyCredentials: CompanyCredential[] = [];
-  filteredCredentials: CompanyCredential[] = [];
   selectedCredential: CompanyCredential;
-  filterText: string = '';
   managers: AccountingManager[] = [];
-  selectedManagers: AccountingManager[] = [];
+  managerNames: string[] = [];
   selectedCompany: CompanyCredential;
   selectedCompanies: CompanyCredential[] = [];
   selectedManager: AccountingManager;
@@ -53,7 +51,6 @@ export class DgiiComponent implements OnInit {
         this.companyCredentialService.getAll().subscribe({
         next: (response) => {
             this.companyCredentials = response;
-            this.filteredCredentials = response;
         },
         error: (err) => console.error(err)
         });
@@ -62,27 +59,10 @@ export class DgiiComponent implements OnInit {
         this.accountingManagerService.getAll().subscribe({
         next: (response) => {
             this.managers = response;
+            this.managerNames = response.map(m => m.managerName);
         },
         error: (err) => console.error(err)
         });
-    }
-    filterData(agents?: AccountingManager[]) {
-        if(agents){
-            this.selectedManagers = agents;
-            this.filteredCredentials = this.companyCredentials.filter(c =>
-                agents.some(agent => agent.managerName === c.accountingManager.managerName)
-            );
-            return;
-        }
-        if (this.filterText) {
-        this.filteredCredentials = this.companyCredentials.filter(credential =>
-            Object.values(credential).some(value =>
-            value?.toString().toLowerCase().includes(this.filterText.toLowerCase())
-            )
-        );
-        } else {
-        this.filteredCredentials = this.companyCredentials;
-        }
     }
 
     getSeverity(status: boolean) {
@@ -155,9 +135,18 @@ export class DgiiComponent implements OnInit {
 
     showDetails(company: CompanyCredential) {
         this.displayDetailDialog = false;
-        this.selectedCompany = company;
-        this.selectedManager = company.accountingManager;
-        this.displayDetailDialog = true;
+        // Cargar los datos completos de la compañía incluyendo tokens
+        this.companyCredentialService.getById(company.id).subscribe({
+            next: (fullCompanyData) => {
+                this.selectedCompany = fullCompanyData;
+                this.selectedManager = fullCompanyData.accountingManager;
+                this.displayDetailDialog = true;
+            },
+            error: (err) => {
+                console.error(err);
+                this.messageService.add({ severity: 'error', summary: 'Error', detail: 'No se pudieron cargar los detalles de la compañía' });
+            }
+        });
     }
 
 

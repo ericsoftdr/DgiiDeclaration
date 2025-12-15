@@ -46,19 +46,26 @@
                 <input pInputText id="pwd" type="text" maxlength="128" [(ngModel)]="selectedManager.managerName" readonly/>
             </div>
         </div>
-        <div class="p-formgrid grid pt-3 pb-2" >
+        <div class="p-formgrid grid pt-3 pb-2" *ngIf="companyCredential.companyCredentialTokens && companyCredential.companyCredentialTokens.length > 0">
             <p-fieldset legend="Tokens" class="field col-12 pt-5">
                 <p-table [value]="companyCredential.companyCredentialTokens"  [tableStyle]="{'min-width': '30rem'}" styleClass="p-datatable-gridlines" >
                     <ng-template pTemplate="header">
                         <tr>
                             <th>No.</th>
                             <th>Valor</th>
+                            <th>Estado</th>
                         </tr>
                     </ng-template>
                     <ng-template pTemplate="body" let-token let-editing="editing" let-ri="rowIndex">
                         <tr>
                             <td> {{token.tokenId}} </td>
-                            <td>{{token.tokenValue}} </td>
+                            <td>
+                                <span [style.color]="token.validated ? '#22c55e' : ''" [style.font-weight]="token.validated ? 'bold' : ''">{{token.tokenValue}}</span>
+                            </td>
+                            <td>
+                                <p-tag *ngIf="token.validated" value="Validado" severity="success" />
+                                <p-tag *ngIf="!token.validated" value="Aun sin usar" severity="warning" />
+                            </td>
                         </tr>
                     </ng-template>
                 </p-table>
@@ -66,6 +73,12 @@
         </div>
     </div>
     <ng-template pTemplate="footer">
+        <p-button
+            *ngIf="companyCredential.tokenFile !== null && companyCredential.tokenFile !== undefined"
+            label="Descargar Archivo"
+            icon="pi pi-download"
+            [text]="true"
+            (onClick)="downloadFile()" />
         <p-button
             label="Cerrar"
             [text]="true"

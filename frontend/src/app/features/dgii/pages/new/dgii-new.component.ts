@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CompanyCredentialService } from '../../services/dgii.service';
 import { CheckboxModule } from 'primeng/checkbox';
@@ -27,11 +27,13 @@ import { TableModule } from 'primeng/table';
   providers: [MessageService]
 })
 export class CreateCompanyCredentialComponent implements OnInit{
+    @ViewChildren('tokenInput') tokenInputs!: QueryList<ElementRef>;
+
     managers: AccountingManager[] = [];
     selectedTokens: CompanyCredentialToken[] = [];
     selectedManager: AccountingManager;
     selectedFile: File | null = null;
-    hideAddButton = false;
+    isLoadingCompanyName: boolean = false;
     companyCredential: CompanyCredential = {
         id: 0,
         rnc: '',
@@ -40,7 +42,7 @@ export class CreateCompanyCredentialComponent implements OnInit{
         tokenRequired: false,
         statusInd: true,
         accountingManagerId: null,
-        selectedForProcessing: false,
+        selectedForProcessing: true,
         dateProcessed: null,
         accountingManager: null,
         companyCredentialTokens: [],
@@ -134,10 +136,10 @@ export class CreateCompanyCredentialComponent implements OnInit{
         if (!rnc || rnc.length === 0) {
             return false;
         }
-
+        /*
         if (rnc.length !== 11) {
             return false;
-        }
+        }*/
         const rncRegex = /^[0-9]+$/;
         if (!rncRegex.test(rnc)) {
             return false;
@@ -155,10 +157,18 @@ export class CreateCompanyCredentialComponent implements OnInit{
         const seenTokenValues: { [key: string]: boolean } = {};
 
         for (const token of this.selectedTokens) {
+            // Validar que el token no esté vacío o solo contenga espacios
+            if (!token.tokenValue || token.tokenValue.trim().length === 0) {
+                this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Todos los tokens deben tener un valor' });
+                return false;
+            }
+
+            // Validar que el token no sea solo ceros
             if (/^0+$/.test(token.tokenValue)) {
                 this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Token inválido' });
                 return false;
             }
+
             if (seenTokenIds[token.tokenId]) {
                 this.messageService.add({ severity: 'error', summary: 'Error', detail: `Token No. duplicado: ${token.tokenId}` });
                 return false;
@@ -175,27 +185,71 @@ export class CreateCompanyCredentialComponent implements OnInit{
         return true;
     }
 
-    onRowEditInit(token: CompanyCredentialToken) {
-        this.selectedTokens[token.tokenId - 1] = { ...token };
+    onlyNumbers(event: KeyboardEvent): boolean {
+        const charCode = event.which ? event.which : event.keyCode;
+        // Solo permite números (0-9)
+        if (charCode < 48 || charCode > 57) {
+            event.preventDefault();
+            return false;
+        }
+        return true;
     }
 
-    onRowEditSave(token: CompanyCredentialToken) {
-        if (token.tokenValue.length >= 4) {
-            this.selectedTokens[token.tokenId - 1] = token;
-            this.messageService.add({ severity: 'success', summary: 'Agregado', detail: 'Token Agregado' });
+    focusNextInput(currentIndex: number): void {
+        const inputsArray = this.tokenInputs.toArray();
+        const nextIndex = currentIndex + 1;
+
+        if (nextIndex < inputsArray.length) {
+            inputsArray[nextIndex].nativeElement.focus();
+        }
+    }
+
+    onTokenRequiredChange(isRequired: boolean): void {
+        if (isRequired) {
+            // Cargar automáticamente los 40 tokens vacíos
+            this.selectedTokens = [];
+            for (let index = 0; index < 40; index++) {
+                this.selectedTokens.push({
+                    id: 0,
+                    tokenId: index + 1,
+                    tokenValue: '',
+                    companyCredentialId: 0,
+                    validated: false
+                });
+            }
         } else {
-            this.messageService.add({ severity: 'error', summary: 'Error', detail: 'El token es invalido' });
+            // Limpiar los tokens si se desactiva
+            this.selectedTokens = [];
         }
     }
 
-    onRowEditCancel(token: CompanyCredentialToken, index: number) {
-        this.selectedTokens.splice(index, 1);
-    }
+    onRncBlur(): void {
+        const rnc = this.companyCredential.rnc.trim();
 
-    addRow(): void{
-        for (let index = 0; index < 40; index++) {
-            this.selectedTokens.push({id: 0, tokenId: index + 1, tokenValue: '00000', companyCredentialId: 0, validated: false});
+        // Validar que el RNC sea válido antes de hacer la consulta
+        if (!this.isValidRnc(rnc)) {
+            return;
         }
-        this.hideAddButton = true;
+
+        // Deshabilitar el campo de nombre de compañía
+        this.isLoadingCompanyName = true;
+
+        // Consultar el RNC
+        this.companyCredentialService.getRncInfo(rnc).subscribe({
+            next: (rncInfo) => {
+                // Si encontró información y tiene nombre, asignarlo
+                if (rncInfo && rncInfo.nombre) {
+                    this.companyCredential.companyName = rncInfo.nombre;
+                }
+                // Habilitar el campo nuevamente
+                this.isLoadingCompanyName = false;
+            },
+            error: (err) => {
+                console.error('Error al consultar RNC:', err);
+                // Habilitar el campo incluso si hay error
+                this.isLoadingCompanyName = false;
+                // No mostrar mensaje de error al usuario ya que puede ser normal que no encuentre
+            }
+        });
     }
 }

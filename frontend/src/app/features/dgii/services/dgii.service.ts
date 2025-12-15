@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CompanyCredential } from '../models/company-credential.model';
+import { RncCedula } from '../models/rnc-cedula.model';
 import { ApiService } from 'src/app/core/services/api.service';
 import { HttpClient } from '@angular/common/http';
 
@@ -36,5 +37,9 @@ export class CompanyCredentialService extends ApiService {
 
   deleteCompany(id: number): Observable<void> {
     return this.delete<void>(`${this.endpoint}/${id}`);
+  }
+
+  getRncInfo(rnc: string): Observable<RncCedula> {
+    return this.get<RncCedula>(`Dgii/GetRnc/${rnc}`);
   }
 }

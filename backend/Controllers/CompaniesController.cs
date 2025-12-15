@@ -1,4 +1,5 @@
 ﻿using DgiiIntegration.Common.Enums;
+using DgiiIntegration.DTOs;
 using DgiiIntegration.Models;
 using DgiiIntegration.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -41,9 +42,9 @@ namespace DgiiIntegration.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<CompanyCredential>> PostCompanyCredential([FromBody] CompanyCredential companyCredential)
+        public async Task<ActionResult<CompanyCredential>> PostCompanyCredential([FromBody] CompanyCredentialCreateDto dto)
         {
-            var createdCompanyCredential = await _companiesService.CreateAsync(companyCredential);
+            var createdCompanyCredential = await _companiesService.CreateFromDtoAsync(dto);
             return CreatedAtAction(nameof(GetCompanyCredential), new { id = createdCompanyCredential.Id }, createdCompanyCredential);
         }
 

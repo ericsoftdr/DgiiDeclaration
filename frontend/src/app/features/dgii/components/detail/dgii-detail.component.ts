@@ -37,4 +37,16 @@ export class DetailDialogComponent {
       this.visible = false;
       this.visibleChange.emit(this.visible);
     }
+
+    downloadFile() {
+        if(this.companyCredential.tokenFile === undefined || this.companyCredential.tokenFile === null){
+            return;
+        }
+        const linkSource = `data:${this.companyCredential.fileType};base64,${this.companyCredential.tokenFile}`;
+        const downloadLink = document.createElement("a");
+        const fileName = `Tokens${this.companyCredential.companyName}.${this.companyCredential.fileType.split('/')[1]}`;
+        downloadLink.href = linkSource;
+        downloadLink.download = fileName;
+        downloadLink.click();
+    }
 }

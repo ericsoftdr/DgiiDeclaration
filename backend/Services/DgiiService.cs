@@ -15,6 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 using ClosedXML.Excel;
 using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using EricSoft.DgiiWebScraper;
 //using static System.Runtime.InteropServices.JavaScript.JSType;
 //using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -327,6 +328,12 @@ namespace DgiiIntegration.Services
             }
 
             return result;
+        }
+
+        public async Task<RncCedula> GetRncAsync(string rnc)
+        {
+            var scraper = new DgiiWebScraperClient();
+           return  await scraper.ConsultarRncCedulaAsync(rnc);
         }
 
         #region Metodos privados auxiliares

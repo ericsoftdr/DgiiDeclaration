@@ -4,11 +4,11 @@
     <div class="p-formgrid grid">
         <div class="field col">
             <label htmlFor="Rnc">Rnc</label>
-            <input pInputText type="text" id="Rnc" maxlength="11" [(ngModel)]="companyCredential.rnc"/>
+            <input pInputText type="text" id="Rnc" maxlength="11" [(ngModel)]="companyCredential.rnc" (blur)="onRncBlur()"/>
         </div>
         <div class="field col">
             <label htmlFor="company">Compañia</label>
-            <input pInputText id="company" type="text" maxlength="128" [(ngModel)]="companyCredential.companyName"/>
+            <input pInputText id="company" type="text" maxlength="128" [(ngModel)]="companyCredential.companyName" [disabled]="isLoadingCompanyName"/>
         </div>
     </div>
     <div class="p-formgrid grid">
@@ -20,7 +20,7 @@
             <div class="flex row pt-5">
                 <div class="flex align-items-center">
                     <span>Token requerido</span>
-                    <p-inputSwitch [(ngModel)]="companyCredential.tokenRequired" class="px-2" />
+                    <p-inputSwitch [(ngModel)]="companyCredential.tokenRequired" (ngModelChange)="onTokenRequiredChange($event)" class="px-2" />
                 </div>
                 <div class="flex align-items-center px-2">
                     <span>Procesar</span>
@@ -61,71 +61,29 @@
         </div>
     </div>
 
-    <div class="p-formgrid grid pt-3 pb-2" *ngIf="companyCredential.tokenRequired">
+    <div class="p-formgrid grid pt-3 pb-2" *ngIf="companyCredential.tokenRequired && selectedTokens.length > 0">
         <p-fieldset legend="Tokens" class="field col-12 pt-5">
-            <p-table [value]="selectedTokens" dataKey="tokenId" editMode="row" [tableStyle]="{'min-width': '80rem'}" styleClass="p-datatable-gridlines" >
-                <ng-template pTemplate="caption">
-					<div class="flex flex-column md:flex-row md:justify-content-start gap-2" *ngIf="!hideAddButton">
-                        <p-button label="Agregar" [raised]="true" (onClick)="addRow()"/>
-					</div>
-				</ng-template>
+            <p-table [value]="selectedTokens" dataKey="tokenId" [tableStyle]="{'min-width': '80rem'}" styleClass="p-datatable-gridlines" >
                 <ng-template pTemplate="header">
                     <tr>
                         <th>No.</th>
                         <th>Valor</th>
-                        <th style="width:20%"></th>
                     </tr>
                 </ng-template>
-                <ng-template pTemplate="body" let-token let-editing="editing" let-ri="rowIndex">
-                    <tr [pEditableRow]="token">
+                <ng-template pTemplate="body" let-token let-ri="rowIndex">
+                    <tr>
                         <td>{{token.tokenId}}</td>
                         <td>
-                            <p-cellEditor>
-                                <ng-template pTemplate="input">
-                                    <input
-                                        minlength="4"
-                                        maxlength="5"
-                                        pInputText type="text"
-                                        [(ngModel)]="token.tokenValue"
-                                        required />
-                                </ng-template>
-                                <ng-template pTemplate="output">
-                                    {{token.tokenValue}}
-                                </ng-template>
-                            </p-cellEditor>
-                        </td>
-                        <td>
-                            <div class="flex align-items-center justify-content-center gap-2">
-                                <button
-                                    *ngIf="!editing"
-                                    pButton
-                                    pRipple
-                                    type="button"
-                                    pInitEditableRow
-                                    icon="pi pi-pencil"
-                                    (click)="onRowEditInit(token)"
-                                    class="p-button-rounded p-button-text">
-                                </button>
-                                <button
-                                    *ngIf="editing"
-                                    pButton
-                                    pRipple
-                                    type="button"
-                                    pSaveEditableRow
-                                    icon="pi pi-check"
-                                    (click)="onRowEditSave(token)"
-                                    class="p-button-rounded p-button-text p-button-success mr-2">
-                                </button>
-                                <!-- <button
-                                    *ngIf="editing"
-                                    pButton pRipple
-                                    type="button"
-                                    pCancelEditableRow
-                                    icon="pi pi-times"
-                                    (click)="onRowEditCancel(token, ri)"
-                                    class="p-button-rounded p-button-text p-button-danger">
-                                </button> -->
-                            </div>
+                            <input
+                                #tokenInput
+                                minlength="4"
+                                maxlength="5"
+                                pInputText
+                                type="text"
+                                [(ngModel)]="token.tokenValue"
+                                (keypress)="onlyNumbers($event)"
+                                (keydown.enter)="focusNextInput(ri)"
+                                required />
                         </td>
                     </tr>
                 </ng-template>

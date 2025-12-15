@@ -136,12 +136,33 @@ namespace DgiiIntegration.Controllers
                 {
                     ("131204783","ERICSOFT SRL","Estatus de prueba.")
                 };
-                
-                
+
+
                 await _dgiiService.SendEmail(subject, data);
                 return Ok();
             }
             catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("/Dgii/GetRnc/{rnc}")]
+        public async Task<IActionResult> GetRncAsync(string rnc)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(rnc))
+                    return BadRequest("El RNC es requerido.");
+
+                var result = await _dgiiService.GetRncAsync(rnc);
+
+                if (result == null)
+                    return NotFound("No se encontró información para el RNC proporcionado.");
+
+                return Ok(result);
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }

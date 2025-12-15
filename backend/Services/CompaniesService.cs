@@ -1,5 +1,6 @@
 ﻿using DgiiIntegration.Common;
 using DgiiIntegration.Common.Enums;
+using DgiiIntegration.DTOs;
 using DgiiIntegration.Helpers;
 using DgiiIntegration.Models;
 using Microsoft.EntityFrameworkCore;
@@ -35,14 +36,19 @@ namespace DgiiIntegration.Services
 
         public async Task<List<CompanyCredential>> GetAllAsync()
         {
-            return await _dbContext.CompanyCredentials.Include(c => c.AccountingManager).Include(c => c.CompanyCredentialTokens).ToListAsync();
+            return await _dbContext.CompanyCredentials
+                .Include(c => c.AccountingManager)
+                //.Include(c => c.CompanyCredentialTokens)
+                .ToListAsync();
         }
 
         public async Task<CompanyCredential> GetByIdAsync(int id)
         {
-            return await _dbContext.CompanyCredentials.Include(c => c.CompanyCredentialTokens)
-                                                      .Where(x => x.Id == id)
-                                                      .FirstOrDefaultAsync();
+            return await _dbContext.CompanyCredentials
+                                   .Include(c => c.AccountingManager)
+                                   .Include(c => c.CompanyCredentialTokens)
+                                   .Where(x => x.Id == id)
+                                   .FirstOrDefaultAsync();
         }
 
         public async Task<CompanyCredential> CreateAsync(CompanyCredential companyCredential)
@@ -53,6 +59,49 @@ namespace DgiiIntegration.Services
                 {
                     companyCredential.TokenFile = Convert.FromBase64String(companyCredential.TokenFileBase64);
                 }
+                _dbContext.CompanyCredentials.Add(companyCredential);
+                await _dbContext.SaveChangesAsync();
+                return companyCredential;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error inesperado al crear Compañia", ex);
+            }
+        }
+
+        public async Task<CompanyCredential> CreateFromDtoAsync(CompanyCredentialCreateDto dto)
+        {
+            try
+            {
+                var companyCredential = new CompanyCredential
+                {
+                    Rnc = dto.Rnc,
+                    CompanyName = dto.CompanyName,
+                    Pwd = dto.Pwd,
+                    TokenRequired = dto.TokenRequired,
+                    StatusInd = dto.StatusInd,
+                    SelectedForProcessing = dto.SelectedForProcessing,
+                    AccountingManagerId = dto.AccountingManagerId,
+                    FileType = dto.FileType,
+                    CompanyCredentialTokens = new List<CompanyCredentialToken>()
+                };
+
+                if (!string.IsNullOrEmpty(dto.TokenFileBase64))
+                {
+                    companyCredential.TokenFile = Convert.FromBase64String(dto.TokenFileBase64);
+                }
+
+                // Mapear los tokens del DTO a entidades
+                foreach (var tokenDto in dto.CompanyCredentialTokens)
+                {
+                    companyCredential.CompanyCredentialTokens.Add(new CompanyCredentialToken
+                    {
+                        TokenId = tokenDto.TokenId,
+                        TokenValue = tokenDto.TokenValue,
+                        Validated = tokenDto.Validated
+                    });
+                }
+
                 _dbContext.CompanyCredentials.Add(companyCredential);
                 await _dbContext.SaveChangesAsync();
                 return companyCredential;

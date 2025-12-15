@@ -89,10 +89,11 @@
                                         maxlength="5"
                                         pInputText type="text"
                                         [(ngModel)]="token.tokenValue"
+                                        [style.border]="token.validated ? '2px solid #22c55e' : ''"
                                         required />
                                 </ng-template>
                                 <ng-template pTemplate="output">
-                                    {{token.tokenValue}}
+                                    <span [style.color]="token.validated ? '#22c55e' : ''" [style.font-weight]="token.validated ? 'bold' : ''">{{token.tokenValue}}</span>
                                 </ng-template>
                             </p-cellEditor>
                         </td>
